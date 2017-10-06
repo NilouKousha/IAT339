@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <title>Style Guide</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title box-1">
+        <img class="img-box" src="./img/logo.jpg" alt="">
+        <div class="title-box">
+          <p>Sahar Jafari</p>
+          <h2> UI Style Guide</h2>
+            <p class="discription">Displayed below is the visual interface guidelines for dressOnline.com. They are to followed and executed as shown below.</p>
+        </div>
+      </div>
+<!--
+      <div class="nav box-2">
+          <a href="./index.html">Style Guide</a>
+          <a href="./wireFrames.html">Wireframes</a>
+          <a href="./citation.html">Citation</a>
+      </div>
+    -->
+    <div class="content">
+
+      <div class="box-3">
+        <div class="whiteSpace">
+        </div>
+        <h3>An in-text link</h3>
+        <hr>
+        <div class="rendered">
+          <h4>Rendered Element</h4>
+          <p>Find your <a href = "#sampleCode">size</a> here.<p>
+        </div>
+        <div class="sampleCode">
+          <h4> Sample Code:</h4>
+            <code class="html-box">
+               &lt; a href = "#sampleCode"&gt; In text link &lt;/a&gt;
+            </code>
+        </div>
+        <div class="whiteSpace"></div>
+        <h3>The navigation button style</h3>
+        <hr>
+        <div class="rendered">
+          <h4>Rendered Element</h4>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="sampleCode">
+          <h4> Sample Code:</h4>
+          <code class="html-box">
+
+            <p>&lt;nav&gt;</p>
+            <p>&lt;ul&gt;</p>
+              <div class="indentation">
+                  <p>&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+              </div>
+            <p>&lt;/ul&gt;</p>
+            <p>&lt;/nav&gt</p>
+          </code>
+        </div>
+
+        <div class="whiteSpace"></div>
+        <h3>A submit and reset button for forms</h3>
+        <hr>
+        <div class="rendered">
+          <h4>Rendered Element</h4>
+          <div class="button-condition">
+              <div class="button-status">
+                <a id="submit" href="#">submit</a>
+                <p> before submit</p>
+              </div>
+              <div class="button-status">
+                <a id="active" href="#">submit</a>
+                <p> after submit</p>
+              </div>
+              <div class="button-status">
+                <a id="none-active" href="#">submit</a>
+                <p> none active</p>
+              </div>
+          </div>
+        </div>
+        <div class="sampleCode">
+          <h4> Sample Code:</h4>
+          <code class="html-box">
+            <p>&lt; a href = "#sampleCode"&gt; submit &lt;/a&gt;</p>
+          </code>
+        </div>
+
+        <div class="whiteSpace">
+        </div>
+        <h3>Three levels of headings and a paragraph </h3>
+        <hr>
+        <h1>heading one</h1>
+        <h2>heading two</h2>
+        <h3>heading three</h3>
+        <p>This is a paragraph!</p>
+        <h3>Bulletted list and Numbered lists </h3>
+        <hr>
+        <ul class = "orderedList">
+          <li>unordered list - item one</li>
+          <li>unordered list - item two</li>
+          <li>unordered list - item three</li>
+        </ul>
+        <ol class = "unorderedList">
+          <li>ordered list - item one</li>
+          <li>ordered list - item two</li>
+          <li>ordered list - item three</li>
+        </ol>
+
+        <div class="whiteSpace">
+        </div>
+        <h3>Main navigation </h3>
+        <hr>
+        <div class="rendered">
+          <h4>Rendered Element</h4>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Woman</a>
+                  <ul class="dropdown">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">New Arrival</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Gown</a></li>
+                    <li><a href="#">Bridesmade</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Sport</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Men</a>
+                  <ul class="dropdown">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">New Arrival</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Sport</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Children</a>
+                  <ul class="dropdown">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">New Arrival</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Boy</a></li>
+                    <li><a href="#">Girl</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Flyers</a>
+                </li>
+                <li>
+                  <a href="#">Whislist</a>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="sampleCode">
+          <h4> Sample Code:</h4>
+          <code class="html-box">
+            <p>&lt;nav&gt;</p>
+            <p>&lt;ul&gt;</p>
+            <p>&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+            <p>&lt;ul&gt;</p>
+              <div class="indentation">
+                <p>&lt;li&gt;&lt;a href="#"&gt;All&lt;/a&gt;&lt;/li&gt;</p>
+                <p>&lt;li&gt;&lt;a href="#"&gt;New Arrival&lt;/a&gt;&gt;;/li&gt;</p>
+                <p>&lt;li&gt;&lt;a href="#"&gt;Casual&lt;/a&gt;&gt;/li&gt;</p>
+                <p>&lt;li&gt;&lt;a href="#"&gt;Gown&lt;/a&gt;&gt;/li&gt;</p>
+                <p>&lt;li&gt;&lt;a href="#"&gt;Bridesmade&lt;/a&gt;&gt;/li&gt;</p>
+              </div>
+            <p>&lt;/ul&gt;</p>
+            <p>&lt;/nav&gt</p>
+          </code>
+        </div>
+
+        <div class="whiteSpace">
+        </div>
+        <h3>Product/Service Listing </h3>
+        <hr>
+        <div class="productsList">
+          <div class="product1">
+            <img class="product_image" src="./img/custom01.jpg" alt="black pants">
+            <div class="product_color">
+              <div class="item black">
+              </div>
+              <div class="item blue">
+              </div>
+              <div class="item red">
+              </div>
+            </div>
+            <h4>LORD & TAYLOR</h4>
+            <h5>Windowpane Cropped Trousers</h5>
+            <h4>$79.00</h4>
+            <h4 class="salePrice">NOW $55.30</h4>
+          </div>
+          <div class="product2">
+            <img class="product_image" src="./img/custom02.jpg" alt="black pants">
+            <div class="product_color">
+              <div class="item black">
+              </div>
+              <div class="item blue">
+              </div>
+              <div class="item red">
+              </div>
+            </div>
+            <h4>LORD & TAYLOR</h4>
+            <h5>Plus Roses Pencil Skirt</h5>
+            <h4>$89.00</h4>
+            <h4 class="salePrice">NOW $65.30</h4>
+
+          </div>
+          <div class="product3">
+            <img class="product_image" src="./img/custom03.jpg" alt="black pants">
+            <div class="product_color">
+              <div class="item black">
+              </div>
+              <div class="item blue">
+              </div>
+              <div class="item red">
+              </div>
+            </div>
+            <h4>LORD & TAYLOR</h4>
+            <h5>Floral Crepe Top</h5>
+            <h4>$59.00</h4>
+            <h4 class="salePrice">NOW $55.30</h4>
+          </div>
+        </div>
+
+        <h3>Website grid structure </h3>
+        <hr>
+        <div class="gridStructure">
+          <div class="left-wrapper">
+            <p>white space</p>
+          </div>
+          <div class="main-grid">
+            <div class="main-grid-title">
+              <p>title, logo, log-in/sign-in, search</p>
+            </div>
+            <div class="main-grid-header">
+              <p>navigation</p>
+            </div>
+            <div class="main-grid-content">
+                  <p>advertisement</p>
+            </div>
+
+            <div class="main-grid-content-important">
+              <div class="main-grid-content-important-side">
+                  <p>hightlights</p>
+              </div>
+              <div class="main-grid-content-important-main">
+                  <p>sliding images of hot deals</p>
+              </div>
+            </div>
+            <div class="main-grid-content-category">
+              <div class="main-grid-content-category1">
+
+              </div>
+              <div class="main-grid-content-category2">
+
+              </div>
+              <div class="main-grid-content-category3">
+
+              </div>
+            </div>
+            <div class="main-grid-content-category">
+              <div class="main-grid-content-category1">
+
+              </div>
+              <div class="main-grid-content-category2">
+
+              </div>
+              <div class="main-grid-content-category3">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="right-wrapper">
+              <p>white space</p>
+          </div>
+
+        </div>
+
+        <h3>Website colour swatches</h3>
+        <hr>
+        <div class="colourSwatches-grid">
+          <div class="black">
+
+          </div>
+          <div class="semiBlack">
+
+          </div>
+          <div class="rust">
+            <p></p>
+          </div>
+          <div class="Mint">
+
+          </div>
+          <div class="slate">
+
+          </div>
+          <div class="seafoam">
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="sidebar box-4">
+        <div class="sidebar_interactiveElements">
+          Interactive elements:
+        </div>
+        <div class="sidebar_textStyling">
+          Typography:
+        </div>
+        <div class="sidebar_CombinedElements">
+          Combined elements:
+        </div>
+
+      </div>
+      <div class="footer box-5">
+
+      </div>
+
+    </div>
+  </body>
+
+
+
+
+</html>
