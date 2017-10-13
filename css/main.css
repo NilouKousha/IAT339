@@ -600,7 +600,6 @@ figcaption{
 
 .page-nav{
   display: flex;
-  width: 60%;
   margin: auto 0px;
   justify-content: center;
 }
@@ -640,4 +639,17 @@ figcaption{
   margin: 0!important;
   height:250px;
   width:220px;
+}
+
+
+.login-title, .Footer-title{
+  color:gray;
+  margin: 30px;
+  font-size: 1.6rem;
+  display: block;
+}
+
+.login{
+  border: 1px solid gray;
+  padding: 20px;
 }
