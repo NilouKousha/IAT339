@@ -23,7 +23,7 @@ input[type=text], input[type=password] {
 button {
     background-color: #706F6F;
     color: white;
-    padding: 20px;
+    padding: 18px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -40,12 +40,9 @@ button:hover {
     padding: 10px 18px;
     background-color: #706F6F;
   }
-
-/* Add padding to containers */
-.container {
-    padding: 16px;
+.formContainer{
+  padding:14px;
 }
-
 /* The "Forgot password" text */
 span.psw {
     float: right;
