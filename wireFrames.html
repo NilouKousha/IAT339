@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/whishList-main.css">
     <title>WireFrames</title>
   </head>
   <body>
@@ -19,7 +22,7 @@
       </div>
       <div class="nav box-2">
           <a href="./index.html">Style Guide</a>
-          <a href="./wireFrames.html">Wireframes</a>
+          <a href="./wireFrames.html">Templates</a>
           <a href="./citation.html">Citation</a>
       </div>
     </div>
@@ -28,211 +31,149 @@
         </div>
 
         <nav class="page-nav">
-          <a href="#smartphone">Smart Phone</a>
-          <a href="#smartwatch">Smart Watch</a>
-          <a href="#console">Game Console</a>
+          <a href="#login">Login</a>
+          <a href="#footer">Footer</a>
+          <a href="#smartphone">Shopping cart</a>
+          <a href="#smartwatch">Check out</a>
+          <a href="#console">Wishlist</a>
         </nav>
+        <hr>
+        <div id="login">
+          <h2 class="login-title">Login Template</h2>
+          <form action="/action_page.php">
 
-        <h3 id="smartphone" class="begining">Smart Phone </h3>
-        <hr class="begining">
-        <h3 class="begining">Browse for a dress</h3>
-        <div class="wireframe-browse">
-          <div class="wireframe-browse-fig first">
-            <figure>
-              <img src="./img/Landing_Screen.png" alt="landing">
-              <figcaption>From landing page choose to register</figcaption>
-            </figure>
-          </div>
-          <div class="wireframe-browse-fig second">
-            <figure>
-              <img src="./img/Registration.png" alt="">
-              <figcaption>Fill out form and tap register</figcaption>
-            </figure>
-          </div>
-          <div class="wireframe-browse-fig third">
-            <figure>
-              <img src="./img/After_Registration.png" alt="">
-              <figcaption>After Registration - pick a category</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="wireframe-browse">
-          <div class="wireframe-browse-fig forth">
-            <figure>
-              <img src="./img/Browse_Categories.png" alt="">
-              <figcaption>pick a category</figcaption>
-            </figure>
-          </div>
-          <div class="wireframe-browse-fig fifth">
-            <figure>
-              <img src="./img/newArrivalSelect.png" alt="">
-              <figcaption>pick a category</figcaption>
-            </figure>
-          </div>
-          <div class="wireframe-browse-fig six">
-            <figure>
-              <img src="./img/WOMAN.png" alt="">
-              <figcaption>collection of woman dress</figcaption>
-            </figure>
-          </div>
+            <div class="container">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
 
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <input type="checkbox" checked="checked"> Remember me
+            </div>
+
+            <div class="container">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
         </div>
 
-        <div class="whiteSpace">
+        <hr>
+        <!--footer -->
+        <div id="footer">
+
+            <div class="content-nilu">
+              <h1 class="Footer-title">Footer</h1>
+              <p> test paragraph with randon stuff.By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+
+          <footer class="footer">
+
+            <div class="row">
+
+                <div class="col1"> <!-- first column-->
+                  <nav class="nav-main">
+                    <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    </ul>
+                 </nav>
+                </div>
+
+                <div class="col2"> <!-- second column-->
+                  <nav class="nav-main">
+                    <ul>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                    </ul>
+                 </nav>
+                </div>
+
+                <div class="right">
+                  <form>
+                    <input type="text" value="suscribe">
+                  </form>
+                </div>
+            </div> <!-- row-->
+                <p class="middle footer-text">@2017 Cshirt Design Company</p>
+          </footer>
+
         </div>
-        <hr class="begining">
-        <h3 class="begining">Zoom on a dress for detail</h3>
-        <div class="wireframe-browse">
-          <div class="wireframe-browse-fig first">
-            <figure>
-              <img src="./img/WOMAN-selected.png" alt="landing">
-              <figcaption>A dress is selected</figcaption>
-            </figure>
+        <hr>
+        <!--footer -->
+        <div id="wishlist">
+          <div class="title">
+            Whish List
           </div>
-          <div class="wireframe-browse-fig second">
-            <figure>
-              <img src="./img/Photo_zoom.png" alt="">
-              <figcaption>Hover over the photo and scroll to see more detail</figcaption>
-            </figure>
+
+          <!-- Product #1 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"><img src="./img/delete-icon.png" alt=""></span>
           </div>
+          <!--
+            <div class="buttons">
+              <span class="like-btn"><img src="./img/heart.png" alt=""></span>
+            </div>
+          -->
+
+            <div class="image">
+              <img class= "item1"  src="./img/item-1.png" alt="" />
+            </div>
+
+            <div class="description">
+              <span>Title</span>
+              <span>Brand</span>
+              <span>Colour</span>
+            </div>
+
+
+            <div class="total-price">$number</div>
+          </div>
+
+          <!-- Product #2 -->
+          <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"><img src="./img/delete-icon.png" alt=""></span>
+            <!-- <span class="like-btn"></span> -->
+            </div>
+
+            <div class="image">
+              <img class= "item2" src="./img/item-2.png" alt=""/>
+            </div>
+
+            <div class="description">
+              <span>Title</span>
+              <span>Brand</span>
+              <span>Colour</span>
+            </div>
+
+
+            <div class="total-price">$number</div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"><img src="./img/delete-icon.png" alt=""></span>
+              <!--<span class="like-btn"></span>-->
+            </div>
+            <div class="image">
+              <img class= "item3" src="./img/item-3.png" alt="" />
+            </div>
+            <div class="description">
+              <span>Title</span>
+              <span>Brand</span>
+              <span>Colour</span>
+            </div>
+            <div class="total-price">$number</div>
+          </div>
+
         </div>
 
-        <div class="whiteSpace">
-        </div>
-        <hr class="begining">
-        <h3 class="begining">Change the color of a dress</h3>
-        <div class="wireframe-browse">
-          <div class="wireframe-browse-fig first">
-            <figure>
-              <img src="./img/WOMAN.png" alt="landing">
-              <figcaption>A dress is selected</figcaption>
-            </figure>
-          </div>
-          <div class="wireframe-browse-fig second">
-            <figure>
-              <img src="./img/change-color-v1.png" alt="">
-              <figcaption>from a color pallet a color is selected</figcaption>
-            </figure>
-          </div>
-          <div class="wireframe-browse-fig third">
-            <figure>
-              <img src="./img/tryColor.png" alt="">
-              <figcaption>another way of changing the color</figcaption>
-            </figure>
-          </div>
-          <div class="wireframe-browse-fig forth">
-            <figure>
-              <img src="./img/tryColor_done.png" alt="">
-              <figcaption>another way of changing the color</figcaption>
-            </figure>
-          </div>
-        </div>
-
-          <div class="whiteSpace">
-          </div>
-          <hr class="begining">
-          <h3 class="begining">Add to card</h3>
-          <div class="wireframe-browse">
-            <div class="wireframe-browse-fig first">
-              <figure>
-                <img src="./img/WOMAN-selected.png" alt="landing">
-                <figcaption>A dress is selected</figcaption>
-              </figure>
-            </div>
-            <div class="wireframe-browse-fig second">
-              <figure>
-                <img src="./img/Photo_zoom.png" alt="">
-                <figcaption>tapped on the selected dress</figcaption>
-              </figure>
-            </div>
-            <div class="wireframe-browse-fig third">
-              <figure>
-                <img src="./img/Details_clicked.png" alt="">
-                <figcaption>the order is customized and clicked on Add To Card</figcaption>
-              </figure>
-            </div>
-            <div class="wireframe-browse-fig forth">
-              <figure>
-                <img src="./img/tap_checkout.png" alt="">
-                <figcaptioni>Click on checkout</figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="whiteSpace">
-          </div>
-          <hr class="begining">
-          <h3 class="begining">Finish Purchase</h3>
-          <div class="wireframe-browse">
-            <div class="wireframe-browse-fig first">
-              <figure>
-                <img id="checkout" src="./img/tap_checkout.png" alt="">
-                <figcaption>click on checkout</figcaption>
-              </figure>
-            </div>
-            <div class="wireframe-browse-fig second">
-              <figure>
-                <img id="visa" src="./img/visa.png" alt="">
-                <figcaption>click on visa to finish the process</figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <h3 id="smartwatch" class="begining">Smart Watch </h3>
-          <hr class="begining">
-          <h3 class="begining">No.1:Browse for a dress</h3>
-          <h3 class="begining">No.2:Change the colour of it</h3>
-
-            <div class="wireframe-browse-fig first">
-              <figure>
-                <img src="./img/smartwatch1.JPG" alt="">
-                <figcaption>From landing page choose different category</figcaption>
-              </figure>
-            </div>
-            <hr class="begining">
-            <h3 class="begining">No.3:Find information about the dress.</h3>
-            <h3 class="begining">No.4:Check out the dress</h3>
-            <div class="wireframe-browse-fig second">
-              <figure>
-                <img src="./img/smartwatch2.JPG" alt="">
-                <figcaption>Place the order using different hand gesture</figcaption>
-              </figure>
-            </div>
-            <hr class="begining">
-            <h3 class="begining">No.5:Finalize your purchase</h3>
-            <div class="wireframe-browse-fig second">
-              <figure>
-                <img src="./img/smartwatch3.JPG" alt="">
-                <figcaption>Finish your purchase and tap visa</figcaption>
-              </figure>
-            </div>
-
-            <h3 id="console" class="begining">Game Console</h3>
-            <hr class="begining">
-            <h3 class="begining">No.1:Browse for a dress</h3>
-              <div class="wireframe-browse-fig first">
-                <figure>
-                  <img src="./img/gameconsole1.JPG" alt="">
-                  <figcaption>Landing page</figcaption>
-                </figure>
-              </div>
-              <hr class="begining">
-              <h3 class="begining">No.2:Change the color of the dress.</h3>
-              <h3 class="begining">No.3:Cancel and go back to browsing page</h3>
-              <div class="wireframe-browse-fig second">
-                <figure>
-                  <img id="rotated" src="./img/gameconsole2.JPG" alt="">
-                  <figcaption>Adjust options or cancel your selected item</figcaption>
-                </figure>
-              </div>
-              <hr class="begining">
-              <h3 class="begining">No.4:Place your order</h3>
-              <h3 class="begining">No.4:Finalize your purchase</h3>
-              <div class="wireframe-browse-fig second">
-                <figure>
-                  <img src="./img/gameconsole3.JPG" alt="">
-                  <figcaption>Finish your purchase and tap visa</figcaption>
-                </figure>
-              </div>
 
       </div>
 
