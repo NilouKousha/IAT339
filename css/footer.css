@@ -1,7 +1,4 @@
-html {
-  height: 100%;
-}
-body {
+.body-footer {
   display: flex;
   flex-direction: column;
   height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
@@ -9,28 +6,27 @@ body {
   font: 16px Sans-Serif;
 }
 
-ul{
+footer {
+  position: relative;
+  background: #706F6F;
+  color: white;
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-footer {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+}
+
+.ul-footer{
   list-style: none;
   margin: 10px;
 }
 
-li{
+.li-footer{
   margin-top: 10px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-h1 {
-  margin: 0 0 20px 0;
-}
-/*p {
-  margin: 0 0 20px 0;
-}*/
-footer {
-  background: #706F6F;
-  color: white;
 }
 
 input[type=text]{
@@ -45,15 +41,6 @@ input[type=text]{
   margin-right: 30px;
 
 }
-.content-nilu {
-  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
-  margin-bottom: 50px;
-}
-.footer {
-  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
-}
 
 .footer-text{
   text-align: center;
@@ -62,7 +49,7 @@ input[type=text]{
   box-sizing: border-box;
 }
 
-.row{
+.row-footer{
   display: flex;
   flex-wrap: wrap;
   margin-left: 15px;
