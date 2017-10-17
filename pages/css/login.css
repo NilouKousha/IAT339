@@ -1,9 +1,9 @@
-a{
+.link-login{
   text-decoration: none;
   color: #000000;
 }
 
-form {
+.form-login{
     border: none;
     width: 50%;
     margin: auto;
@@ -20,7 +20,7 @@ input[type=text], input[type=password] {
 }
 
 /* button style*/
-button {
+.button-login {
     background-color: #706F6F;
     color: white;
     padding: 18px;
@@ -30,17 +30,17 @@ button {
     width: 100%;
 }
 
-button:hover {
+.button-login:hover {
     opacity: 0.8;
 }
 
 /* Extra style for the cancel button (red) */
-.cancelbtn {
+.button-cancel-login {
     width: auto;
     padding: 10px 18px;
     background-color: #706F6F;
   }
-.formContainer{
+.container-login{
   padding:14px;
 }
 /* The "Forgot password" text */

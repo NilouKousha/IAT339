@@ -10,52 +10,25 @@
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="header">
-      <div class="logo">
-        <a href="./pages-index.html">logo goes here</a>
-      </div>
-      <div class="navigations">
-        <div class="">
-          <nav>
-            <ul>
-              <li><a href="./woman.html">Women</a></li>
-              <li><a href="./men.html">Men</a></li>
-              <li><a href="./design.html">Design</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="">
-          <nav class="interactive-icons">
-            <li class="icons"><a href="#"><img src="./img/search24.png" alt="search"></a></li>
-            <li class="icons"><a href="./login.html"><img src="./img/account24.png" alt="search"></a></li>
-            <li class="icons"><a href="../template-Shppping-Cart/shopping.html"><img src="./img/shopping-cart24.png" alt="search"></a></li>
-            <li class="icons"><a href="../template-whishlist/whishList.html"><img src="./img/wishlist32.png" alt="search"></a></li>
-          </nav>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <form action="/action_page.php">
-    <div class="formContainer">
+  <!-- ////////////////////login nilou -->
+  <form class="form-login" action="/action_page.php">
+    <div class="container-login">
       <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <button type="submit">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
+      <button type="submit" class="button-login">Login</button>
+      <input class="input-login" type="checkbox" checked="checked"> Remember me
     </div>
 
-    <div class="formContainer">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+    <div class="container-login">
+      <button type="button" class="button-cancel-login">Cancel</button>
+      <span class="psw-login">Forgot <a class="link-login" href="#">password?</a></span>
     </div>
   </form>
+  <!-- ////////////////////login nilou -->
 </body>
 
 </html>
