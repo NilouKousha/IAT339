@@ -18,12 +18,11 @@ body {
 
 .header-page-index{
   height: 20%;
-  background-color: lightgray;
+
 }
 
 .content-page-index{
   height: 80%;
-  background-color: gray;
   font-size: 60px;
   padding: 300px;
   text-align: center;
@@ -56,36 +55,70 @@ body {
 }
 
 .main-nav-bar-page-index ul {
-  margin: 40px 10px 10px 0px;
+  margin-top: 3px;
   display: flex;
 }
 
 .main-nav-bar-page-index ul li{
   list-style-type: none;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 
 .main-nav-item-page-index{
   text-decoration: none;
-  color: gray;
+  color:gray;
+  order:1;
 }
 
+.navigations-container-page-index{
+  width: 85%;
+}
+.interactive-icons-container-page-index{
+  position: absolute;
+  right:60px;
+}
 .icons-index-page{
   list-style-type: none;
   margin-left: 10px;
 }
 
+
 .navigations-page-index, .interactive-icons-page-index{
   display: flex;
 }
 
-.interactive-icons-page-index{
-  position: absolute;
-  left: 85%;
-  top: 30px;
+.interactive-icons-page-index li{
+  margin-left: 20px;
 }
 
+.navigations-page-index{
+  margin-top:70px;
+  z-index: 10;
+}
+
+
+.interactive-icons-container-page-index{
+  order:2;
+  width:10%;
+  float:left;
+}
+
+.top-section-pages-index{
+  display: flex;
+}
+
+.text-next-coverphoto-home{
+  width: 30%;
+  z-index: -1;
+  order:2;
+}
+
+.cover-photo-container{
+  order:1;
+  z-index: -1;
+  width:70%;
+}
 
 /*whish list --- Sahar */
 .shopping-cart-checkout {
@@ -810,7 +843,7 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: white; background: black;
+    color: gray; background: black;
 }
 
 /* mouse over link */
@@ -820,7 +853,7 @@ a:hover {
 
 /* selected link */
 a:active {
-      color: white; background: black;
+      color: b; background: black;
 }
 
 
