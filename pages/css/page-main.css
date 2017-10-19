@@ -7,8 +7,14 @@ html,
 body {
   width: 100%;
   height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+  /*overflow-x: hidden;*/
+
+}
+  font-family: 'Roboto', sans-serif;{
+}
+
+.heading-home-index{
+  font-size: 3em;
 }
 
 .container-page-index{
@@ -27,16 +33,6 @@ body {
   padding: 300px;
   text-align: center;
 }
-
-.footer-page-index{
-  height: 20%;
-  background-color: black;
-  font-size: 30px;
-  padding: 60px;
-  text-align: center;
-  color: gray;
-}
-
 
 .logo-page-index{
   position: absolute;
@@ -109,15 +105,23 @@ body {
 }
 
 .text-next-coverphoto-home{
-  width: 30%;
+  /*width: 45%;*/
   z-index: -1;
   order:2;
+  max-width: 35%;
+  margin-right: 3em;
+  margin-left: 3em;
 }
 
 .cover-photo-container{
   order:1;
   z-index: -1;
   width:70%;
+  margin-left: 3em;
+}
+
+.cover-photo{
+  
 }
 
 /*whish list --- Sahar */
