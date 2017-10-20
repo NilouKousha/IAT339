@@ -10,6 +10,7 @@ html,
 body {
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
   font-family: 'Roboto', sans-serif;{
 }
@@ -75,6 +76,7 @@ body {
 .photo-banner{
   display: flex;
   flex-direction: row;
+
 }
 
 .header-page-index{
@@ -84,8 +86,47 @@ body {
 .content-page-index{
   height: 80%;
   font-size: 60px;
-
   text-align: center;
+}
+
+
+.sliding-photo{
+  display: flex;
+  margin-top: 100px;
+}
+.sliding-photo-section-container{
+  border:1px solid lightgray;
+  display: flex;
+  width:30%;
+  margin-left: 20px;
+}
+.sliding-img1,.sliding-img2,.sliding-img3 {
+width: 100%;
+  margin: auto;
+  padding: 0 !important;
+}
+.sliding-photo-section-previous{
+  order:1;
+  width: 10%;
+}
+
+.sliding-photo-section{
+  order:2;
+  z-index: 1-;
+}
+.sliding-photo-section-next{
+    order:3;
+    width: 10%;
+}
+.preveious-btn, .next-btn{
+
+  border: none;
+  color: white;
+  padding: auto 32px;
+  text-align: center;
+  text-decoration: none;
+  height: auto!important;
+  font-size: 16px;
 }
 
 .logo-page-index  {
@@ -913,7 +954,7 @@ a:hover {
 
 /* selected link */
 a:active {
-      color: b; background: black;
+      color: blue; background: black;
 }
 
 

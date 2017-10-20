@@ -64,10 +64,79 @@
           </div>
         </div>
       </section>
-      <
+
       <section>
+        <div class="sliding-photo">
+          <div class="sliding-photo-section-container">
+            <div class="sliding-photo-section-previous">
+              <button class="preveious-btn" onclick="plusDivs(-1,'sliding-img1')">&#10094;</button>
+            </div>
+            <div class="sliding-photo-section">
+              <img class="sliding-img1" src="./img/banner-big-left.jpg" alt="">
+              <img class="sliding-img1" src="./img/banner-big-right.jpg" alt="">
+              <img class="sliding-img1" src="./img/banner-big-left.jpg" alt="">
+              <img class="sliding-img1" src="./img/banner-big-right.jpg" alt="">
+            </div>
+            <div class="sliding-photo-section-next">
+              <button class="next-btn" onclick="plusDivs(1,'sliding-img1')">&#10095;</button>
+            </div>
+          </div>
+
+          <div class="sliding-photo-section-container">
+            <div class="sliding-photo-section-previous">
+              <button class="preveious-btn" onclick="plusDivs(-1,'sliding-img2')">&#10094;</button>
+            </div>
+            <div class="sliding-photo-section">
+              <img class="sliding-img2" src="./img/banner-big-left.jpg" alt="">
+              <img class="sliding-img2" src="./img/banner-big-right.jpg" alt="">
+              <img class="sliding-img2" src="./img/banner-big-left.jpg" alt="">
+              <img class="sliding-img2" src="./img/banner-big-right.jpg" alt="">
+            </div>
+            <div class="sliding-photo-section-next">
+              <button class="next-btn" onclick="plusDivs(1,'sliding-img2')">&#10095;</button>
+            </div>
+          </div>
+
+          <div class="sliding-photo-section-container">
+            <div class="sliding-photo-section-previous">
+              <button class="preveious-btn" onclick="plusDivs(-1,'sliding-img3')">&#10094;</button>
+            </div>
+            <div class="sliding-photo-section">
+              <img class="sliding-img3" src="./img/banner-big-left.jpg" alt="">
+              <img class="sliding-img3" src="./img/banner-big-right.jpg" alt="">
+              <img class="sliding-img3" src="./img/banner-big-left.jpg" alt="">
+              <img class="sliding-img3" src="./img/banner-big-right.jpg" alt="">
+            </div>
+            <div class="sliding-photo-section-next">
+              <button class="next-btn" onclick="plusDivs(1,'sliding-img3')">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
 
       </section>
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex,"sliding-img1");
+          showDivs(slideIndex,"sliding-img2");
+          showDivs(slideIndex,"sliding-img3");
+          function plusDivs(n,classname) {
+            showDivs(slideIndex += n,classname);
+          }
+
+          function showDivs(n,classname) {
+            var i;
+            var x = document.getElementsByClassName(classname);
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+          </script>
+
+
     </div>
 <!-- ///////////////////////footer nilou -->
     <footer>
