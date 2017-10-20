@@ -95,13 +95,27 @@ body {
   margin-top: 100px;
 }
 .sliding-photo-section-container{
-  border:1px solid lightgray;
   display: flex;
+  flex-direction: column;
   width:30%;
   margin-left: 20px;
+
+}
+
+.sliding-photo-section-container-visual{
+    border:1px solid lightgray;
+    display: flex;
+
+}
+
+.sliding-photo-section-container-description{
+  z-index: 2;
+  margin-top: 10px;
+  text-align: left;
+  line-height: 0.3rem;
 }
 .sliding-img1,.sliding-img2,.sliding-img3 {
-width: 100%;
+  width: 100%;
   margin: auto;
   padding: 0 !important;
 }
@@ -114,21 +128,32 @@ width: 100%;
   order:2;
   z-index: 1-;
 }
+.discount-lable{
+  color:darkred;
+
+}
 .sliding-photo-section-next{
     order:3;
     width: 10%;
 }
 .preveious-btn, .next-btn{
-
   border: none;
   color: white;
   padding: auto 32px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   height: auto!important;
   font-size: 16px;
 }
 
+.color-options{
+  margin-top: 20px;
+
+}
+.color-option{
+  width: 7%;
+  margin-right: 10px;
+}
 .logo-page-index  {
  text-align: center;
   background: red;
