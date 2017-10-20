@@ -28,11 +28,19 @@ body {
 }
 
 .left-rectangular{
-  width: 25%;
-  background-color: #c0b283;
+  width: 35%;
   height:600px;
   margin-left: 20px;
+  background-image: url("../img/Banner-Left-Women.jpg");
+  background-repeat: no-repeat;
+  background-size:100% auto;
 }
+
+
+.left-rectangular-photo{
+
+}
+
 .right-top-rectangular{
   background-color:#dcd0c0;
   height:300px;
