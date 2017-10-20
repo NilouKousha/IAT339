@@ -3,8 +3,7 @@
   -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
-
-}
+       }
 
 html,
 body {
@@ -169,12 +168,14 @@ body {
 .cover-photo-container-men-page{
     background-image: url("../img/men-page-banner-coverphoto.jpg");
 }
-
-.cover-photo-container-woman-page, .cover-photo-container-men-page{
+.cover-photo-container-design-page{
+  background-image: url("../img/design-page-banner-coverphoto.jpg");
+}
+.cover-photo-container-woman-page, .cover-photo-container-men-page, .cover-photo-container-design-page{
   background-repeat: no-repeat;
   background-position: center;
   z-index: -10;
-  height: 500px;
+  height: 300px;
   width:400%;
 }
 .logo-page-index a{
@@ -257,7 +258,6 @@ body {
 
 .cover-photo{
   width: 90%;
-
 }
 
 /*whish list --- Sahar */
