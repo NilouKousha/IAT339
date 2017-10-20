@@ -163,6 +163,20 @@ body {
   color:gray;
 }
 
+.cover-photo-container-woman-page{
+    background-image: url("../img/woman-page-banner-coverphoto.jpg");
+}
+.cover-photo-container-men-page{
+    background-image: url("../img/men-page-banner-coverphoto.jpg");
+}
+
+.cover-photo-container-woman-page, .cover-photo-container-men-page{
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -10;
+  height: 500px;
+  width:400%;
+}
 .logo-page-index a{
   text-decoration: none;
   color:gray;
