@@ -31,13 +31,13 @@ body {
   height:600px;
   background-image: url("../img/Banner-Left-Women.jpg");
   background-repeat: no-repeat;
-  background-size:100% 97%;
 }
 
 
 .right-top-rectangular{
-  background-color:#dcd0c0;
   height:300px;
+  background-image: url("../img/Banner-Top.jpg");
+
 }
 .right-bottom-rectangular{
   height:300px;
@@ -50,7 +50,7 @@ body {
 
 .right-bottom-left-rectangular{
   width: 50%;
-  background-image: url("../img/Banner-left-bottom-right-Women.jpg");
+  background-image: url("../img/Banner-Left-Bottom.jpg");
   background-repeat: no-repeat;
   background-size:100% auto;
   margin: 20px 20px 20px 0px;
@@ -67,10 +67,10 @@ body {
 .woman-banner{
   width: 90%;
 }
-.desing-img{
+.design-img{
   width: 70%;
 }
-.featured-desing-img{
+.featured-design-img{
   width:70%;
 }
 
@@ -211,24 +211,23 @@ body {
 .navigations-container-page-index{
   width: 85%;
 }
-.interactive-icons-container-page-index{
-  position: absolute;
-  right:60px;
-}
-.icons-index-page{
-  list-style-type: none;
-  margin-left: 10px;
-}
-
 
 .navigations-page-index, .interactive-icons-page-index{
   display: flex;
 }
-
-.interactive-icons-page-index li{
-  margin-left: 20px;
+.interactive-icons-container-page-index{
+  position: absolute;
+  right:20px;
 }
 
+.interactive-icons-page-index{
+  list-style-type: none;
+}
+
+.interactive-icons-container-page-index{
+  order:2;
+  float:left;
+}
 .navigations-page-index{
   margin-top:70px;
   margin-bottom: -55px;
@@ -236,11 +235,7 @@ body {
 }
 
 
-.interactive-icons-container-page-index{
-  order:2;
-  width:10%;
-  float:left;
-}
+
 
 .top-section-pages-index{
   display: flex;
