@@ -163,8 +163,8 @@ body {
 }
 .color-options{
   margin-top: 20px;
-
 }
+
 .color-option{
   width: 7%;
   margin-right: 10px;
@@ -268,6 +268,10 @@ body {
   background-image: url("../img/Cover.jpg");
   background-position: center;
   background-size: auto 100%;
+<<<<<<< HEAD
+=======
+  background-repeat: none;
+>>>>>>> master
 }
 
 
@@ -1015,7 +1019,7 @@ a:active {
   }
 
   .quantity-summary-checkout,
-  .description-summary-checkout" {
+  .description-summary-checkout {
     width: 100%;
     text-align: center;
     margin: 6px 0;
@@ -1024,4 +1028,248 @@ a:active {
     margin-right: 20px;
 
   }
+}
+
+
+
+
+
+
+
+
+
+
+/*sahar new changes*/
+
+.main-container{
+  margin-left:50px;
+  margin-right: 50px;
+}
+
+.nagivation-section {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+
+}
+
+.icon-based-link-navigation{
+  position: fixed;
+  right: 40px;
+}
+
+.text-based-link-navigation{
+  position: fixed;
+  left: 40px;
+}
+
+.main-nav-item-page-index{
+  margin-left: 30px;
+}
+.cover-photo-home-page-box{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+
+}
+
+.text-next-coverphoto-home{
+  line-height: 1.6rem;
+  margin-top: 5rem;
+}
+
+.cover-photo-container{
+  z-index: -1;
+  order:1;
+}
+
+.cover-photo{
+  width: 100%;
+}
+
+/*css style for the middle grid*/
+.middle-grid-box-container-home, .middle-grid-right-box-container-home{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.middle-grid-banner-photo1{
+  object-fit: cover;
+  flex: 1;
+  height: 20rem;
+}
+
+.middle-grid-banner-photo1{
+  object-fit: cover;
+  flex: 1;
+}
+
+.middle-grid-banner-photo1{
+  object-fit: cover;
+flex: 1;
+}
+
+/*
+spring-summer css*/
+
+.ss-coverphoto, .fw-coverphoto, .leather-coverphoto{
+  width:100%;
+  z-index: -1;
+}
+
+.ss-big-title{
+  position: absolute;
+  /*margin-top: -80px!important;*/
+  z-index: 2;
+  font-size: 5vw;
+}
+
+
+
+.products-box{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.products-box{
+  margin-top: 100px;
+}
+
+.product-image{
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+
+}
+
+.product-link{
+  position: relative;
+  width: inherit;
+}
+.product-explanation{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  opacity: 0.5;
+  font-size: 1vw;
+  background-color: white;
+  color:red;
+  font-size: 1.5vw;
+  padding-left: 30px;
+}
+
+.product-link{
+  text-decoration: none;
+}
+
+.product-link:focus, .product-link:hover, .product-link:active{
+  background-color: white;
+  opacity: 0.8;
+}
+
+/*product-detail-page*/
+.product-detail-box{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.product-detail-photo-container{
+  order:1;
+}
+.product-detail-photo{
+  width: 100%;
+  height:auto;
+}
+.product-detail-description{
+  order:1
+}
+
+
+@media (min-width:50.25em) {
+
+  .text-next-coverphoto-home{
+    /*width: 45%;*/
+    margin-top: 0rem;
+    line-height: 1.6rem;
+    width:calc(30.333333% - .2em);
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+
+  }
+
+  .cover-photo-container{
+    z-index: -1;
+    order:1;
+    width:calc(63.333333% - .2em);
+  }
+
+  .heading-home-index{
+    margin-top: 0;
+  }
+
+  .product-box{
+    width: calc(33.333333% - 0.2em);
+    justify-content: space-between;
+  }
+
+  .product-detail-photo-container{
+    width: 40%;
+    order:1;
+
+  }
+  .product-detail-photo{
+    width: 100%;
+    height:auto;
+  }
+  .product-detail-description{
+    text-align: center;
+    order:1
+  }
+
+
 }
