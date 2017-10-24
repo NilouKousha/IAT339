@@ -15,10 +15,12 @@ body {
   margin-top: 100px;
   display:flex;
   height:600px;
+
 }
 
+/*home page banners*/
 .right-rectangular{
-  margin: 20px 0px 20px 20px;
+  margin: 0 3rem 3rem 0;
   display: flex;
   flex-direction: column;
   width: 65%;
@@ -26,19 +28,36 @@ body {
 }
 
 .left-rectangular{
-  margin: 20px 0px 20px 20px;
+  margin: 0 2rem 3rem 3rem;
   width: 35%;
   height:600px;
   background-image: url("../img/Banner-Left-Women.jpg");
   background-repeat: no-repeat;
+  background-size:100% auto;
 }
-
 
 .right-top-rectangular{
   height:300px;
   background-image: url("../img/Banner-Top.jpg");
+  background-size:100% auto;
+}
+
+.right-bottom-left-rectangular{
+  width: 50%;
+  background-image: url("../img/Banner-Left-Bottom.jpg");
+  margin: 2rem 2rem 0 0;
+  background-position: center;
 
 }
+.right-bottom-right-rectangular{
+  width: 50%;
+  background-image: url("../img/Banner-Right-Bottom.jpg");
+  margin: 2rem 0 0 0;
+  background-position: center;
+}
+/*home page banners*/
+
+
 .right-bottom-rectangular{
   height:300px;
   display: flex;
@@ -48,18 +67,6 @@ body {
   width: inherit;
 }
 
-.right-bottom-left-rectangular{
-  width: 50%;
-  background-image: url("../img/Banner-Left-Bottom.jpg");
-  background-repeat: no-repeat;
-  background-size:100% auto;
-  margin: 20px 20px 20px 0px;
-  padding-bottom: 20px !important;
-}
-.right-bottom-right-rectangular{
-  width: 50%;
-  background-color: lightgreen;
-}
 
 .men-banner{
   width: 50%;
@@ -110,9 +117,7 @@ body {
 }
 
 .sliding-photo-section-container-visual{
-    border:1px solid lightgray;
     display: flex;
-
 }
 
 .sliding-photo-section-container-description{
@@ -146,13 +151,16 @@ body {
 .preveious-btn, .next-btn{
   border: none;
   color: white;
-  padding: auto 32px;
   text-align: left;
   text-decoration: none;
   height: auto!important;
-  font-size: 16px;
+  cursor: pointer;
 }
 
+.image-title{
+  font-size:1rem;
+  font-weight:300;
+}
 .color-options{
   margin-top: 20px;
 
@@ -239,10 +247,10 @@ body {
 
 .top-section-pages-index{
   display: flex;
+  height: 30rem;
 }
 
 .text-next-coverphoto-home{
-  /*width: 45%;*/
   z-index:0;
   order:2;
   max-width: 30%;
@@ -256,12 +264,12 @@ body {
   order:1;
   z-index: -1;
   width:70%;
-  margin-left: 3em;
+  margin-left: 3rem;
+  background-image: url("../img/Cover.jpg");
+  background-position: center;
+  background-size: auto 100%;
 }
 
-.cover-photo{
-  width: 90%;
-}
 
 /*whish list --- Sahar */
 .shopping-cart-checkout {
@@ -533,14 +541,6 @@ body {
   font-weight: 300;
 }
 
-button[class*=btn] {
-  width: 30px;
-  height: 30px;
-  background-color: #E1E8EE;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-}
 .minus-btn img {
   margin-bottom: 3px;
 }
@@ -793,12 +793,6 @@ input:focus {
   font-weight: 200;
 }
 
-button[class*=btn] {
-  background-color: #E1E8EE;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-}
 .minus-btn-summary-checkout img {
   margin-bottom: 3px;
 }
