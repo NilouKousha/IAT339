@@ -40,7 +40,9 @@
 }
 
 
-
+.container-home{
+  margin: 0px 2rem;;
+}
 .navigation-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -55,7 +57,7 @@
   justify-content: space-around;
 }
 .navigation-box{
-  margin:2rem 2rem;
+  margin:2rem 0rem;
 }
 
 /*styling */
@@ -77,13 +79,12 @@
 .banner-photo-homepage{
   width: 100%;
   height:auto;
-  padding: 0 2rem;
   z-index: -1;
   margin-top: -6rem;
 }
 
 .text-next-to-banner{
-  padding: 0 2rem;
+  padding-left:2rem;
 }
 
 .middle-grid{
@@ -98,6 +99,8 @@
   -webkit-justify-content: space-around;
   -ms-justify-content: space-around;
   justify-content: space-around;
+
+  margin-top: 15rem;
 }
 
 
@@ -125,25 +128,27 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.selected-items-box{
+  margin-top: 10rem;
 }
 
 .middle-grid-photo{
   width: 100%;
   height: auto;
-  padding: 0 2rem;
-}
-/*copy from old css file */
-.content-page-index{
-  height: 80%;
-  font-size: 60px;
-  text-align: center;
+
 }
 
-.photo-banner{
-  margin-top: 100px;
-  height:600px;
 
+.products-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -152,6 +157,13 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
 }
 
 
@@ -176,8 +188,7 @@
     }
 
     .middle-grid-left-box{
-      width: 33%;
-
+      width: 33.33333%;
     }
     .middle-grid-right-box{
       width: 66.33333%;
@@ -187,15 +198,12 @@
       width: 50%;
     }
 
-    .middle-grid-photo {
-      padding: 0rem;
-    }
+
     .middle-grid-left-photo{
-      padding-left: 2rem;
       padding-right: 1rem;
     }
     .middle-grid-right-box{
-      padding-right: 2rem;
+
     }
     .middle-grid-right-bottom-box{
       padding-top: 1rem;
@@ -205,5 +213,9 @@
     }
     .middle-grid-right-bottom-right-box{
       padding-left: 0.5rem;
+    }
+
+    .product-box{
+      width:calc(33.333333% - 1rem);  
     }
 }
