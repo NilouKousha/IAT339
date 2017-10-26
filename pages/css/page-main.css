@@ -263,10 +263,22 @@ body {
 
 .cover-photo-container{
   z-index: -1;
+<<<<<<< HEAD
+  width:70%;
+  margin-left: 3rem;
+  background-image: url("../img/Cover.jpg");
+  background-position: center;
+  background-size: auto 100%;
+<<<<<<< HEAD
+=======
+  background-repeat: none;
+>>>>>>> master
+=======
   order:1;
 }
 .homepage-cover{
   width: 100%;
+>>>>>>> master
 }
 /*whish list --- Sahar */
 .shopping-cart-checkout {
@@ -449,12 +461,6 @@ body {
   border-bottom:  1px solid #E1E8EE;
 }
 
-/* Buttons -  Delete and Like */
-.buttons {
-  position: relative;
-  padding-top: 30px;
-  margin-right: 60px;
-}
 
 .delete-btn {
   display: inline-block;
@@ -972,10 +978,6 @@ select{
 }
 
 
-a:link {
-    color: black;
-}
-
 /* visited link */
 a:visited {
 
@@ -1118,12 +1120,6 @@ spring-summer css*/
   z-index: -1;
 }
 
-.ss-big-title{
-  position: absolute;
-  /*margin-top: -80px!important;*/
-  z-index: 2;
-  font-size: 5vw;
-}
 
 
 
@@ -1156,11 +1152,6 @@ spring-summer css*/
   position: relative;
   width: inherit;
 }
-.product-explanation{
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%;
 
   font-size: 1vw;
   background-color: white;

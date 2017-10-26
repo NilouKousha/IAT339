@@ -1,3 +1,9 @@
+body{
+  overflow: auto;
+ padding-bottom: 180px;
+ /* must be same height as the footer */
+}
+
 /*grid structure of the drop down menue*/
 
 .nav-grid, .banner-box{
@@ -182,10 +188,28 @@
   width:30px;
   padding-top: 1rem;
 }
+/*product*/
+.product-explanation{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #333333;
+  font-size: .8rem;
+}
+
 
 #side-menu{
   padding-left: 3rem;
 }
+.ss-big-title{
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+  z-index: 2;
+  font-size: 4vw;
+}
+
+@media (min-width:500px) {
 
 .navigation-box-horizontal{
   width:0px;

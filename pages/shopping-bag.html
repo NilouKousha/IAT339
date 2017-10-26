@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="./css/page-main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/shopping.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+<title>Home Page</title>
+</head>
+
+<body>
+  <table>
+  <caption>Order Summary</caption>
+  <thead>
+    <tr>
+      <th scope="col" colspan="2"></th>
+      <!-- <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Subtotal</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./img/Shopping-1.jpg" alt="shpping cart icon"></td>
+      <td data-label="Item">Velevet Coat</td>
+      <td data-label="Quantity">
+        <input type="text" name="name" value="1" class="quantity">
+      </td>
+
+
+      <td data-label="Total">$2000</td>
+    </tr>
+    <tr>
+      <td><img src="./img/Shopping-2.jpg" alt="shpping cart icon"></td>
+      <td scope="row" data-label="Item">Red coat</td>
+      <td data-label="Quantity">
+        <input type="text" name="name" value="1" class="quantity">
+      </td>
+      <td data-label="Total">$4000</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="3">Subtotal</td>
+      <td>$6000</td>
+    </tr>
+
+    <tr>
+      <td colspan="3">Tax</td>
+      <td>$135.36</td>
+    </tr>
+
+    <tr>
+      <td colspan="3">Shipping</td>
+      <td>$200</td>
+    </tr>
+
+    <tr>
+      <td colspan="3"></td>
+      <td>
+        <div class="checkout">
+        <a class="buttons" href="./checkout.html"> Checkout</a>
+      </div>
+      </td>
+
+    </tr>
+
+  </tfoot>
+</table>
+
+<!-- ///////////////////////footer nilou -->
+    <footer>
+      <div class="row-footer">
+          <div class="col1"> <!-- first column-->
+            <nav class="nav-main">
+              <ul class="ul-footer">
+              <li class="li-footer">About</li>
+              <li class="li-footer">Customer Service</li>
+              </ul>
+           </nav>
+          </div>
+
+          <div> <!-- second column-->
+            <nav class="nav-main">
+              <ul class="ul-footer">
+              <li class="li-footer">Terms & Use</li>
+              <li class="li-footer">Privacy Policy</li>
+              </ul>
+           </nav>
+          </div>
+
+          <div class="right">
+            <form>
+              <input type="text" value="Suscribe" class="footer-text-field">
+            </form>
+          </div>
+      </div> <!-- row-->
+          <p class="middle footer-text">@2017 IAT 339</p>
+    </footer>
+    <!-- ///////////////////////footer nilou -->
+</body>
+</html>
