@@ -209,7 +209,6 @@ body{
   font-size: 4vw;
 }
 
-@media (min-width:500px) {
 
 .navigation-box-horizontal{
   width:0px;
@@ -252,7 +251,7 @@ body{
 
     .banner-photo-homepage{
 
-      margin-top: -6rem;
+      margin-top: -2rem;
     }
 
     .text-next-to-banner{
