@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/normalize.css">
-     <link rel="stylesheet" href="./css/page-main.css">
+    <link rel="stylesheet" href="./css/page-main.css">
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- fonts -->
@@ -13,34 +14,34 @@
     <!-- fonts -->
   <title>Home Page</title>
   </head>
-  <body>
-    <main class="container-home">
+  <body onload="hideORShow()">
     <header>
-      <div class="navigation-box">
-        <nav id="nav-items" class="grid nav-grid nav-items">
-          <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">MENU</button>
-          <div class="col-1of6 nav-item">
-            <a class="main-nav-item-page-index" href="./index.html">Home</a></li>
-          </div>
+    <nav id="horizontal-navigation-links" class="navbar navigation-box-horizontal">
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./spring-summer.html">Fall</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./fall-winter.html">Winter</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
+    </nav>
+    <div id="side-menu" class="side-nav" >
+      <a href="#" class="open-slide">
+        <svg id="hamburgur-icon" class="nav-menu-sliding-item" onClick="openSlideMenu()">
+          <path class="hamburgur-icon-bar"  d="M0,5 30,5" stroke="red" stroke-width="5"/>
+          <path class="hamburgur-icon-bar" d="M0,14 30,14" stroke="red" stroke-width="5"/>
+          <path class="hamburgur-icon-bar" d="M0,23 30,23" stroke="red" stroke-width="5"/>
+        </svg>
 
-          <div class="col-1of6 nav-item" >
-            <a class="main-nav-item-page-index" href="./spring-summer.html">Fall</a>
-          </div>
+      </a>
 
-          <div class="col-1of6 nav-item">
-            <a class="main-nav-item-page-index" href="./fall-winter.html">Winter</a>
-          </div>
+      <a class="nav-menu-sliding-item" href="./index.html">Home</a>
+      <a class="nav-menu-sliding-item" href="./spring-summer.html">Fall</a>
+      <a class="nav-menu-sliding-item" href="./fall-winter.html">Winter</a>
+      <a class="nav-menu-sliding-item" href="./leather.html">Leather</a>
+      <a class="nav-menu-sliding-item" href="./campain.html">Campain</a>
+    </div>
 
-          <div class="col-1of6 nav-item">
-            <a class="main-nav-item-page-index" href="./leather.html">Leather</a>
-          </div>
-        </nav>
-        <div class="col-1of6 shopping-cart-icon-main">
-            <a href="./shopping.html"><img src="./img/shopping-cart24.png" alt="shpping cart icon"></a>
-        </div>
-      </div>
-    </header>
+  </header>
 
+  <main class="container-home">
     <div class="banner-box">
       <div class="banner-photo-container">
         <img class="banner-photo-homepage"src="./img/fw-coverphoto.jpg" alt="A nice lady wearing kneat sweater and holding a bag">
@@ -96,10 +97,9 @@
           </div>
         </a>
       </div>
-
-
     </div>
 
   </main>
+  <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
