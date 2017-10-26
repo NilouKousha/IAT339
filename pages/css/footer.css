@@ -7,6 +7,8 @@
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background: #706F6F;
   color: white;
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
@@ -64,5 +66,13 @@ footer {
   padding: 10px;
 }
 .right{
-  margin: auto;
+  margin-left: 600px
+}
+
+@media (max-width:500px){
+
+  .right{
+    margin:auto;
+  }
+
 }
