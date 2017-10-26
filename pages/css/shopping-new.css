@@ -10,12 +10,8 @@ html, body {
 }
 
 .shopping-cart {
-  width: 750px;
-  /*height: 423px;*/
   margin: 80px auto;
   background: #FFFFFF;
-  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-  border-radius: 6px;
 
   display: flex;
   flex-direction: column;
@@ -104,6 +100,9 @@ html, body {
   font-size: 16px;
   background-color: #d2d0d0;
   font-weight: 300;
+  width: 50%;
+  padding: 5px;
+  margin-top: 10px;
 }
 
 .quantity{
