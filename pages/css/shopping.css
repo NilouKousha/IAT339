@@ -1,0 +1,98 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.25;
+  display: flex;
+}
+table {
+  /*border: 1px solid #ccc;*/
+  border-collapse: collapse;
+  margin: 20px;
+  padding: 0;
+  width: 80%;
+  table-layout:fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+  text-align: left;
+}
+table tr {
+  /*background: #f8f8f8;*/
+  /*border: 1px solid #ddd;*/
+  padding: .35em;
+}
+table th,
+table td {
+  text-align: center;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+}
+
+tfoot{
+  text-align: right;
+
+}
+
+.checkout{
+  padding: 5px;
+  background-color: #333333;
+  font-size: 16px;
+  text-align: center;
+  }
+
+  .buttons{
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    background-color: #333333;
+    border: none;
+  }
+
+.quantity{
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: scroll;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    /*content: attr(data-label);*/
+    float: left;
+    font-weight: bold;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
