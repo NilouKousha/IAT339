@@ -1,3 +1,9 @@
+body{
+  overflow: auto;
+ padding-bottom: 180px;
+ /* must be same height as the footer */
+}
+
 /*grid structure of the drop down menue*/
 
 .nav-grid, .banner-box{
@@ -14,7 +20,6 @@
   justify-content: space-between;
 
 }
-
 
 
 .grid:after {
@@ -166,6 +171,22 @@
   justify-content: space-around;
 }
 
+/*product*/
+.product-explanation{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #333333;
+  font-size: .8rem;
+}
+
+.ss-big-title{
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+  z-index: 2;
+  font-size: 4vw;
+}
 
 @media (min-width:41em) {
 
@@ -216,6 +237,6 @@
     }
 
     .product-box{
-      width:calc(33.333333% - 1rem);  
+      width:calc(33.333333% - 1rem);
     }
 }
