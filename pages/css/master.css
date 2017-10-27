@@ -245,7 +245,7 @@ x-overflow: hidden;
 
 .navigation-box-horizontal a:hover, .nav-menu-sliding-item a:hover{
   font-weight: bold;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
   /*background-color: #606060;*/
   color: #3e5f64;
   border-bottom: 1px solid gray;
