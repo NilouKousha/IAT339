@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/page-main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+
+    <!-- fonts -->
+  <title>Contact Us</title>
+  </head>
+  <body onload="hideORShow()">
+    <header>
+      <nav id="horizontal-navigation-links" class="navbar navigation-box-horizontal">
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./spring-summer.html">Spring</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./fall-winter.html">Winter</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./campaign.html">Campaigns</a>
+      </nav>
+      <a class="shopping-cart-icon" href="./shopping-bag-new.html"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
+      <div id="side-menu" class="side-nav" >
+        <a href="#" class="open-slide">
+          <svg id="hamburgur-icon" class="nav-menu-sliding-item" onClick="openSlideMenu()">
+            <path class="hamburgur-icon-bar"  d="M0,5 30,5" stroke="red" stroke-width="5"/>
+            <path class="hamburgur-icon-bar" d="M0,14 30,14" stroke="red" stroke-width="5"/>
+            <path class="hamburgur-icon-bar" d="M0,23 30,23" stroke="red" stroke-width="5"/>
+          </svg>
+        </a>
+        <a class="nav-menu-sliding-item" href="./index.html">Home</a>
+        <a class="nav-menu-sliding-item" href="./spring-summer.html">Spring</a>
+        <a class="nav-menu-sliding-item" href="./fall-winter.html">Winter</a>
+        <a class="nav-menu-sliding-item" href="./leather.html">Leather</a>
+        <a class="nav-menu-sliding-item" href="./campaign.html">Campaign</a>
+      </div>
+    </header>
+    <script type="text/javascript" src="js/main.js"></script>
+    <main class="container-home">
+      <section class="banner banner-photo-homepage">
+         <img class="contactus-coverphoto " src="./img/fw-coverphoto-campain.jpg" alt="">
+        <h1 class="ss-big-title">Customer Service</h1>
+      </section>
+      <section class="">
+        <div class="title">
+          <h3 class="contact-us-header"> We're here to help. 24/7</h3>
+        </div>
+        <div class="contact-us-container">
+          <div class="phone-contact">
+            <h3 class="contact-subtitle">Call us:</h3>
+            <div class="call-number">
+              <h4>Australia Office:</h4>
+              <h5>1.899.888.6262</h5>
+            </div>
+            <div class="call-number">
+              <h4>U.S.A Office:</h4>
+              <h5>1.888.888.6262</h5>
+            </div>
+            <div class="call-number">
+              <h4>Canada Office:</h4>
+              <h5>1.877.888.6262</h5>
+            </div>
+          </div>
+          <div class="email-contact">
+            <h3 class="contact-subtitle">Email us:</h3>
+
+          <div class="form-container">
+            <div class="contact-us-from" >
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="example@someting.com">
+
+              <label class="country-dropdown" for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label id="subject-area" for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+              <input id="submit-btn" type="submit" value="Submit" onclick="openModel()">
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="close-icon-background">
+          <span class="close-icon" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="model-text">
+          <h3 id="title-modal-message">Thank you for reaching to us</h3>
+          <p id="modal-message">One of our specialist will contact you in the next 24 hours.</p>
+        </div>
+      </div>
+
+    </div>
+
+    </main>
+    <script type="text/javascript" src="js/model.js"></script>
+  </body>
+</html>
