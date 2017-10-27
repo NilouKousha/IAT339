@@ -1,7 +1,5 @@
 body{
 x-overflow: hidden;
- padding-bottom: 180px;
- /* must be same height as the footer */
  padding-right: 1rem;
 }
 
@@ -161,7 +159,26 @@ x-overflow: hidden;
 }
 
 
+
+
+#hamburgur-icon{
+  height:30px;
+  width:30px;
+  padding-top: 1rem;
+}
+/*product*/
+.product-explanation{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #333333;
+  font-size: .6rem;
+  letter-spacing: .1rem;
+}
+
 .products-box{
+  margin-top: 20px;
+  margin-bottom: 70px;
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -178,20 +195,7 @@ x-overflow: hidden;
   -ms-justify-content: space-around;
   justify-content: space-around;
 }
-
-#hamburgur-icon{
-  height:30px;
-  width:30px;
-  padding-top: 1rem;
-}
 /*product*/
-.product-explanation{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  color: #333333;
-  font-size: .8rem;
-}
 
 
 #side-menu{
@@ -200,11 +204,12 @@ x-overflow: hidden;
 
 .ss-big-title{
   position: absolute;
-  margin-top: -80px;
+  margin-top: -30px;
   margin-left: 20px;
   z-index: 2;
-  font-size: 4vw;
-  color: #d3d3d3;
+  font-size: 6vw;
+  color: #777671;
+  letter-spacing: .1rem;
 }
 
 
