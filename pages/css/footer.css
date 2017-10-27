@@ -48,9 +48,35 @@ footer {
 
 .footer-text{
   text-align: center;
-  font-size: .5rem;
+  font-size: 1rem;
   margin-bottom: -10px;
   box-sizing: border-box;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+
+.footer-text-small{
+  font-size: .8rem;
+}
+
+
+.footer-text-link{
+  text-decoration: none;
+}
+
+.footer-text-link:visited{
+  color: #ffffff;
+}
+
+.middle{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  /*display: flex;
+  flex-direction: column;*/
+}
+.right{
+  margin-left: 600px
 }
 
 .row-footer{
@@ -60,13 +86,8 @@ footer {
   margin-right: 15px;
 }
 
-.middle{
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-}
-.right{
-  margin-left: 600px
+.nav-main-footer{
+  margin-left: 30px;
 }
 
 @media (max-width:500px){
