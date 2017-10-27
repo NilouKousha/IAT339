@@ -1124,23 +1124,7 @@ spring-summer css*/
 
 
 
-.products-box{
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
 
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  -webkit-justify-content: space-around;
-  -ms-justify-content: space-around;
-  justify-content: space-around;
-}
-
-.products-box{
-  margin-top: 100px;
-}
 
 .product-image{
   width: 100%;
