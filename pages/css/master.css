@@ -208,7 +208,7 @@ x-overflow: hidden;
   margin-left: 20px;
   z-index: 2;
   font-size: 6vw;
-  color: #777671;
+  color: #3e5f64;
   letter-spacing: .1rem;
 }
 
@@ -227,7 +227,7 @@ x-overflow: hidden;
   color:#606060;
   font-size:1.3vw;
   z-index: 10;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .nav-menu-sliding-item{
@@ -246,11 +246,9 @@ x-overflow: hidden;
 .navigation-box-horizontal a:hover, .nav-menu-sliding-item a:hover{
   font-weight: bold;
   padding-bottom: 1.5rem;
-  background-color: #606060;
-  color:white;
+  /*background-color: #606060;*/
+  color: #3e5f64;
   border-top: 1px solid gray;
-  opacity: 0.5;
-  height: 0.5rem;
 }
 
 .contact-us-container{
@@ -407,7 +405,7 @@ input[type=submit]:hover {
     }
 
     .navigation-box-horizontal{
-      width:50%;
+      width:60%;
       padding: 3rem 2rem 2rem 1.6rem;
     }
 
