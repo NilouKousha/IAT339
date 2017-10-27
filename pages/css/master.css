@@ -1,7 +1,5 @@
 body{
 x-overflow: hidden;
- /*padding-bottom: 180px;*/
- /* must be same height as the footer */
  padding-right: 1rem;
 }
 
@@ -36,25 +34,25 @@ x-overflow: hidden;
 
 
 .grid:after {
-	content: "";
-	display: block;
-	clear: both;
+        content: "";
+        display: block;
+        clear: both;
 }
 
 *, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 [class*='col-'] {
-	float: left;
-	padding: 0;
-	text-align: left;
+        float: left;
+        padding: 0;
+        text-align: left;
 }
 
 .col-1of6{
-	width: 40%;
+        width: 40%;
 }
 
 
@@ -161,7 +159,26 @@ x-overflow: hidden;
 }
 
 
+
+
+#hamburgur-icon{
+  height:30px;
+  width:30px;
+  padding-top: 1rem;
+}
+/*product*/
+.product-explanation{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #333333;
+  font-size: .6rem;
+  letter-spacing: .1rem;
+}
+
 .products-box{
+  margin-top: 20px;
+  margin-bottom: 70px;
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -178,20 +195,7 @@ x-overflow: hidden;
   -ms-justify-content: space-around;
   justify-content: space-around;
 }
-
-#hamburgur-icon{
-  height:30px;
-  width:30px;
-  padding-top: 1rem;
-}
 /*product*/
-.product-explanation{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  color: #333333;
-  font-size: .8rem;
-}
 
 
 #side-menu{
@@ -200,11 +204,12 @@ x-overflow: hidden;
 
 .ss-big-title{
   position: absolute;
-  margin-top: -80px;
+  margin-top: -30px;
   margin-left: 20px;
   z-index: 2;
-  font-size: 4vw;
-  color: #d3d3d3;
+  font-size: 6vw;
+  color: #3e5f64;
+  letter-spacing: .1rem;
 }
 
 
@@ -222,7 +227,7 @@ x-overflow: hidden;
   color:#606060;
   font-size:1.3vw;
   z-index: 10;
-
+  /*font-weight: bold;*/
 }
 
 .nav-menu-sliding-item{
@@ -241,11 +246,9 @@ x-overflow: hidden;
 .navigation-box-horizontal a:hover, .nav-menu-sliding-item a:hover{
   font-weight: bold;
   padding-bottom: 1.5rem;
-  background-color: #606060;
-  color:white;
-  border-top: 1px solid gray;
-  opacity: 0.5;
-  height: 0.5rem;
+  /*background-color: #606060;*/
+  color: #3e5f64;
+  border-bottom: 1px solid gray;
 }
 
 .contact-us-container{
@@ -423,7 +426,7 @@ input[type=submit]:hover {
       color: #3e5f64;
     }
 
-    
+
 
     .middle-grid-left-box{
       width: 33.33333%;
