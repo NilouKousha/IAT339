@@ -1,6 +1,6 @@
 body{
 x-overflow: hidden;
- padding-bottom: 180px;
+ /*padding-bottom: 180px;*/
  /* must be same height as the footer */
  padding-right: 1rem;
 }
@@ -59,7 +59,7 @@ x-overflow: hidden;
 
 
 .container-home{
-  margin: 0px 2rem;;
+  margin: 0px 2rem;
 }
 .navigation-box-horizontal{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -219,9 +219,10 @@ x-overflow: hidden;
   top: 3rem;
 }
 .main-nav-item-page-index{
-  color:white;
+  color:#606060;
   font-size:1.3vw;
   z-index: 10;
+  font-weight: bold;
 }
 
 .nav-menu-sliding-item{
@@ -234,15 +235,17 @@ x-overflow: hidden;
 
 .navigation-box-horizontal a, .nav-menu-sliding-item a{
   text-align: center;
+  letter-spacing: 0.075rem;
 }
 
 .navigation-box-horizontal a:hover, .nav-menu-sliding-item a:hover{
   font-weight: bold;
-  padding-bottom: 2rem;
-  background-color: white;
-  color:black;
+  padding-bottom: 1.5rem;
+  background-color: #606060;
+  color:white;
   border-top: 1px solid gray;
   opacity: 0.5;
+  height: 0.5rem;
 }
 
 .contact-us-container{
@@ -391,7 +394,7 @@ input[type=submit]:hover {
 
     .col-1of6 {
       width: 16.667%;
-      padding: 20px;
+      padding: 10px 5px;
     }
 
     .nav-grid{
@@ -399,8 +402,8 @@ input[type=submit]:hover {
     }
 
     .navigation-box-horizontal{
-      width:60%;
-      padding: 2rem 2rem 2rem 1.2rem;
+      width:50%;
+      padding: 3rem 2rem 2rem 1.6rem;
     }
 
     .banner-photo-container{
@@ -409,8 +412,7 @@ input[type=submit]:hover {
     }
 
     .banner-photo-homepage{
-
-      margin-top: -2rem;
+      margin-top: -3rem;
     }
 
     .text-next-to-banner{
