@@ -1,6 +1,11 @@
 body{
 x-overflow: hidden;
  padding-right: 1rem;
+ width: 100%;
+ height: auto;
+ overflow-x: hidden;
+ font-family: 'Josefin Sans', sans-serif;
+
 }
 
 /*grid structure of the drop down menue*/
@@ -57,7 +62,7 @@ x-overflow: hidden;
 
 
 .container-home{
-  margin: 0px 2rem;
+  margin: 0px 0rem;
 }
 .navigation-box-horizontal{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -83,6 +88,7 @@ x-overflow: hidden;
 
 #hamburgur-icon,#side-menu{
   visibility: hidden;
+  z-index: 99;
 }
 
 
@@ -93,7 +99,7 @@ x-overflow: hidden;
   margin-top: 2rem;
 }
 
-.campaign-coverphoto{
+.campaign-coverphoto, .fw-coverphoto, .ss-coverphoto, .product-image{
   width: 100%;
 }
 
@@ -164,7 +170,7 @@ x-overflow: hidden;
 #hamburgur-icon{
   height:30px;
   width:30px;
-  padding-top: 1rem;
+  padding-top: 0rem;
 }
 /*product*/
 .product-explanation{
@@ -217,6 +223,7 @@ x-overflow: hidden;
 .navigation-box-horizontal{
   width:0px;
   height: 0px;
+
 }
 .shopping-cart-icon{
   position: absolute;
@@ -233,17 +240,21 @@ x-overflow: hidden;
 .nav-menu-sliding-item{
   padding-top: 1rem;
   font-size: 4vw;
-  color:white;
+  color:black;
   z-index: 10;
   justify-content: center;
+  text-decoration: none;
+  letter-spacing: 0.075rem;
 }
+
 
 .navigation-box-horizontal a, .nav-menu-sliding-item a{
   text-align: center;
   letter-spacing: 0.075rem;
+  text-decoration: none;
 }
 
-.navigation-box-horizontal a:hover, .nav-menu-sliding-item a:hover{
+.navigation-box-horizontal a:hover, .nav-menu-sliding-item:hover, {
   font-weight: bold;
   padding-bottom: 1.2rem;
   /*background-color: #606060;*/
