@@ -944,11 +944,7 @@ input{
   display: inline;
 }
 
-select{
-  display: inline;
-  margin-left: 20px;
-  height: 30px;
-}
+
 
 .signin-title-checkout, .steps-title-checkout, .payment-method-title-checkout,.review-title-checkout {
   margin-bottom: 20px;
