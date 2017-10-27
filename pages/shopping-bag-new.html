@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./css/master.css">
-  <link rel="stylesheet" href="./css/page-main.css"> -->
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="./css/page-main.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/shopping-new.css">
   <link rel="stylesheet" href="./css/footer.css">
@@ -15,7 +15,32 @@
 <title>Home Page</title>
 </head>
 
-<body>
+<body onload="hideORShow()">
+  <header>
+    <nav id="horizontal-navigation-links" class="navbar navigation-box-horizontal">
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./summer.html">Summer</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./winter.html">Winter</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item" href="./campaign.html">Campaign</a>
+    </nav>
+    <a class="shopping-cart-icon" href="./shopping-bag-new.html"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
+    <div id="side-menu" class="side-nav" >
+      <a href="#" class="open-slide">
+        <svg id="hamburgur-icon" class="nav-menu-sliding-item" onClick="openSlideMenu()">
+          <path class="hamburgur-icon-bar"  d="M0,5 30,5" stroke="red" stroke-width="5"/>
+          <path class="hamburgur-icon-bar" d="M0,14 30,14" stroke="red" stroke-width="5"/>
+          <path class="hamburgur-icon-bar" d="M0,23 30,23" stroke="red" stroke-width="5"/>
+        </svg>
+      </a>
+
+      <a class="nav-menu-sliding-item" href="./index.html">Home</a>
+      <a class="nav-menu-sliding-item" href="./summer.html">Summer</a>
+      <a class="nav-menu-sliding-item" href="./winter.html">Winter</a>
+      <a class="nav-menu-sliding-item" href="./leather.html">Leather</a>
+      <a class="nav-menu-sliding-item" href="./campaign.html">Campaign</a>
+    </div>
+  </header>
 
   <div class="shopping-cart">
   <!-- Title -->
