@@ -12,7 +12,6 @@ html, body {
 .shopping-cart {
   margin: 80px auto;
   background: #FFFFFF;
-
   display: flex;
   flex-direction: column;
 }
@@ -106,11 +105,9 @@ html, body {
 }
 
 .quantity{
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  background-color: #d2d0d0;
-}
+    padding-top: 20px;
+    margin-right: 60px;
+  }
 
 button[class*=btn] {
   width: 30px;
@@ -157,10 +154,9 @@ input:focus {
   }
 
   .quantity{
+    /*width: 50%;*/
     height: 10%;
-    width: 50%;
     text-align: center;
-    background-color: #333333;
     margin: 10px;
   }
 
@@ -180,7 +176,7 @@ input:focus {
   .image, .description {
     width: 100%;
     text-align: center;
-    /*margin: 6px 0;*/
+    margin: 6px 0;
   }
   .buttons {
     margin-right: 20px;
