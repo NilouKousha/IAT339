@@ -31,7 +31,7 @@ var horizontalnavigationBox = document.getElementById('horizontal-navigation-lin
 
 
 function hideORShow(){
-  if(width > 500){
+  if(width > 668){
     console.log("Inside of hideOrShow function - Window width is greater than 500px, hiding hamburger");
     // hamburgerIcon.style.visibility = "hidden";
     slidingMenu.style.visibility = "hidden";
@@ -42,7 +42,7 @@ function hideORShow(){
 
   }
   else{
-    console.log("Inside of hideOrShow function - Window width is less than 500px, hiding hamburger");
+    console.log("Inside of hideOrShow function - Window width is less than 500px, revealing hamburger");
     horizontalnavigationBox.style.visibility = "hidden";
     horizontalnavigationBox.style.width = "0";
     horizontalnavigationBox.style.height = "0";
