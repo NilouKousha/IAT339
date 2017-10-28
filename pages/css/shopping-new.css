@@ -10,7 +10,7 @@ html, body {
 }
 
 .shopping-cart {
-  margin: 80px auto;
+  margin-top:10rem;
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -93,7 +93,6 @@ html, body {
 
 
 .quantity-text-input {
-  -webkit-appearance: none;
   border: none;
   text-align: center;
   font-size: 16px;
