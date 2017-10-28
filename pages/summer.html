@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
-    <!-- <link rel="stylesheet" href="./css/page-main.css"> -->
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/master.css">
     <!-- fonts -->
@@ -13,17 +12,17 @@
     <!-- fonts -->
   <title>Summer Collection</title>
   </head>
-  <body onload="hideORShow()">
+  <body onload="hideORShow()" class="summer">
     <header>
       <nav id="horizontal-navigation-links" class="navbar navigation-box-horizontal">
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
-        <a class="main-nav-item-page-index col-1of6 nav-item" href="./summer.html">Summer</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item current-summer" href="./summer.html">Summer</a>
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./winter.html">Winter</a>
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./campaign.html">Campaign</a>
       </nav>
       <a class="shopping-cart-icon" href="./shopping-bag-new.html"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
-      <div id="side-menu" class="side-nav" >
+      <div id="side-menu" class="side-nav">
         <a href="#" class="open-slide">
           <svg id="hamburgur-icon" class="nav-menu-sliding-item" onClick="openSlideMenu()">
             <path class="hamburgur-icon-bar"  d="M0,5 30,5" stroke="red" stroke-width="5"/>
@@ -42,8 +41,8 @@
 
     <main class="container-home">
         <section class="banner banner-photo-homepage">
-           <img class="ss-coverphoto" src="./img/ss-coverphoto.jpg" alt="">
           <h1 class="ss-big-title">Summer Collection</h1>
+           <img class="ss-coverphoto" src="./img/ss-coverphoto.jpg" alt="">
         </section>
         <section class="products-box">
           <div class="product-box">
@@ -58,7 +57,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-2.jpg" alt="">
               <div class="product-explanation">
-                <h2>FANTASY LAMB LEATHER PERFECTO</h2>
+                <h2>Fantasy lamb leather perfecto</h2>
               </div>
             </a>
           </div>
@@ -66,7 +65,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-3.jpg" alt="">
               <div class="product-explanation">
-                <h2>COMBISHORT EN CUIR NAPPA D'AGNEAU PLONGÉ</h2>
+                <h2>Cashmere coat</h2>
               </div>
             </a>
           </div>
@@ -74,7 +73,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-4.jpg" alt="">
               <div class="product-explanation">
-                <h2>MILANO REVERSIBLE PLAYSUIT</h2>
+                <h2>Milano reversible suit</h2>
               </div>
             </a>
           </div>
@@ -82,7 +81,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-5.jpg" alt="">
               <div class="product-explanation">
-                <h2>this is the latest product ever</h2>
+                <h2>dress napa leather</h2>
               </div>
             </a>
           </div>
@@ -106,7 +105,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-8.jpg" alt="">
               <div class="product-explanation">
-                <h2>this is the latest product ever</h2>
+                <h2>dress napa leather</h2>
               </div>
             </a>
           </div>
@@ -130,7 +129,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-11.jpg" alt="">
               <div class="product-explanation">
-                <h2>this is the latest product ever</h2>
+                <h2>dress napa leather</h2>
               </div>
             </a>
           </div>
@@ -138,7 +137,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-12.jpg" alt="">
               <div class="product-explanation">
-                <h2>this is the latest product ever</h2>
+                <h2>Suede leather coat</h2>
               </div>
             </a>
           </div>
@@ -154,7 +153,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-14.jpg" alt="">
               <div class="product-explanation">
-                <h2>this is the latest product ever</h2>
+                <h2>Suede leather coat</h2>
               </div>
             </a>
           </div>
@@ -162,7 +161,7 @@
             <a class="product-link" href="#" >
               <img class="product-image" src="./img/ss-15.jpg" alt="">
               <div class="product-explanation">
-                <h2>this is the latest product ever</h2>
+                <h2>Plum knit cardigan </h2>
               </div>
             </a>
           </div>
@@ -183,6 +182,28 @@
             </a>
           </div>
         </section>
+        </main>
+        <!-- ///////////////////////footer -->
+        <footer>
+            <div class="footer-text">
+              <div class="section-row">
+                <div class="footer-item">
+                  <div><a href="./contactus.html" class="footer-text-link">About Us</a></div>
+                  <div><a href="./contactus.html" class="footer-text-link">Contact Us</a></div>
+                </div>
+                <div class="footer-item">
+                  <div><a href="http://www.sfu.ca/~nkousha/IAT339/StyleGuide/" class="footer-text-link">Style Guide</a></div>
+                  <div><a href="./contactus.html" class="footer-text-link">References</a></div>
+                </div>
+                <div class="footer-item">
+                  <div><a href="./contactus.html" class="footer-text-link">Return Policy</a></div>
+                  <div><a href="./contactus.html" class="footer-text-link">Terms & Conditions</a></div>
+                </div>
+              </div>
+              <div class="footer-text-small-container"><p class="footer-text-small">@2017 IAT 339</p></div>
+              </div>
+        </footer>
+        <!-- ///////////////////////footer-->
       <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

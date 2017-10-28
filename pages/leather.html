@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/master.css">
-    <!-- <link rel="stylesheet" href="./css/page-main.css"> -->
     <link rel="stylesheet" href="./css/footer.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
@@ -13,13 +12,13 @@
     <!-- fonts -->
   <title>Home Page</title>
   </head>
-  <body onload="hideORShow()">
+  <body onload="hideORShow()" class="leather">
     <header>
       <nav id="horizontal-navigation-links" class="navbar navigation-box-horizontal">
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./summer.html">Summer</a>
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./winter.html">Winter</a>
-        <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item current-leather" href="./leather.html">Leather</a>
         <a class="main-nav-item-page-index col-1of6 nav-item" href="./campaign.html">Campaign</a>
       </nav>
       <a class="shopping-cart-icon" href="./shopping-bag-new.html"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
@@ -41,8 +40,8 @@
     </header>
     <main class="container-home">
         <section class="banner banner-photo-homepage">
+          <h1 class="ss-big-title">Leather collection</h1>
            <img class="leather-coverphoto" src="./img/leather-coverphoto.jpg" alt="">
-          <h1 class="ss-big-title">FALL WINTER</h1>
         </section>
         <section class="products-box">
           <div class="product-box">
@@ -167,36 +166,28 @@
           </div>
 
         </section>
-        <!-- ///////////////////////footer nilou -->
+      </main>
+        <!-- ///////////////////////footer -->
         <footer>
-          <div class="row-footer">
-              <div class="col1"> <!-- first column-->
-                <nav class="nav-main">
-                  <ul class="ul-footer">
-                  <li class="li-footer">About</li>
-                  <li class="li-footer">Customer Service</li>
-                  </ul>
-               </nav>
+            <div class="footer-text">
+              <div class="section-row">
+                <div class="footer-item">
+                  <div><a href="./contactus.html" class="footer-text-link">About Us</a></div>
+                  <div><a href="./contactus.html" class="footer-text-link">Contact Us</a></div>
+                </div>
+                <div class="footer-item">
+                  <div><a href="http://www.sfu.ca/~nkousha/IAT339/StyleGuide/" class="footer-text-link">Style Guide</a></div>
+                  <div><a href="./contactus.html" class="footer-text-link">References</a></div>
+                </div>
+                <div class="footer-item">
+                  <div><a href="./contactus.html" class="footer-text-link">Return Policy</a></div>
+                  <div><a href="./contactus.html" class="footer-text-link">Terms & Conditions</a></div>
+                </div>
               </div>
-
-              <div> <!-- second column-->
-                <nav class="nav-main">
-                  <ul class="ul-footer">
-                  <li class="li-footer">Terms & Use</li>
-                  <li class="li-footer">Privacy Policy</li>
-                  </ul>
-               </nav>
+              <div class="footer-text-small-container"><p class="footer-text-small">@2017 IAT 339</p></div>
               </div>
-
-              <div class="right">
-                <form>
-                  <input type="text" value="Suscribe" class="footer-text-field">
-                </form>
-              </div>
-          </div> <!-- row-->
-              <p class="middle footer-text">@2017 IAT 339</p>
         </footer>
-        <!-- ///////////////////////footer nilou -->
+        <!-- ///////////////////////footer-->
       <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
