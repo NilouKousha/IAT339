@@ -186,7 +186,7 @@ body{
 }
 
 .products-box{
-  /*margin-top: 10rem;*/
+  margin-top: 6rem;
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -203,18 +203,12 @@ body{
   -ms-justify-content: space-around;
   justify-content: space-around;
 }
-/*product*/
-
-
-#side-menu{
-  padding-left: 3rem;
-}
 
 
 .ss-big-title{
   position: absolute;
-  margin-top: -30px;
-  margin-left: 20px;
+  margin-top: -3rem;
+  margin-left: 4rem;
   z-index: 2;
   font-size: 6vw;
   color: #3e5f64;
@@ -228,14 +222,43 @@ body{
   text-align: center;
 }
 
+.title{
+  font-size: 3vw;
+  color: #3e5f64;
+  letter-spacing: .1rem;
+  margin-left: 2rem;
+}
+
 .shopping-title{
   position: absolute;
   /*margin-top: -50px;*/
-  margin-left: 20px;
+  margin-left: 4rem;
   z-index: 2;
   font-size: 6vw;
   color: #3e5f64;
   letter-spacing: .1rem;
+}
+
+
+.text-next-to-banner{
+  width:33.33%;
+  line-height: 1.6rem;
+  padding-left:2rem;
+  padding-top: 4rem;
+  color: #3e5f64;
+}
+
+.paragraph{
+  width:40%;
+  line-height: 1.6rem;
+  color: #3e5f64;
+  margin-left: 2rem;
+}
+
+
+
+#side-menu{
+  padding-left: 3rem;
 }
 
 .navigation-box-horizontal{
@@ -251,6 +274,8 @@ body{
 .main-nav-item-page-index{
   color:#606060;
   font-size:1.3vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 .nav-menu-sliding-item{
@@ -263,7 +288,6 @@ body{
   letter-spacing: 0.075rem;
 }
 
-
 .navigation-box-horizontal a, .nav-menu-sliding-item a{
   text-align: center;
   letter-spacing: 0.075rem;
@@ -273,7 +297,7 @@ body{
 .navigation-box-horizontal a:hover, .nav-menu-sliding-item:hover {
   padding-bottom: 1.2rem;
   color: #96b59c;
-  border-bottom: 1px solid gray;
+  border-bottom: .08rem solid gray;
 }
 
 .home a.current-home{
@@ -337,7 +361,7 @@ input[type=text],input[type=email],select,textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border-radius: .2rem; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -350,7 +374,7 @@ input[type=submit] {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: .2rem;
     cursor: pointer;
     height: 2.5rem;
 }
@@ -367,10 +391,11 @@ input[type=submit]:hover {
 }
 /* Add a background color and some padding around the form */
 .form-container, .contact-us-container{
-    border-radius: 5px;
+    border-radius: .2rem;
     background-color: #f2f2f2;
-    padding-top: 20px;
+    padding-top: 2rem;
     color:gray;
+    padding-bottom: 2rem;
 }
 
 .call-number{
@@ -401,7 +426,7 @@ input[type=submit]:hover {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 4rem;
-    border: 1px solid #888;
+    border: .08rem solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
     position: relative;
 
@@ -526,13 +551,7 @@ input[type=submit]:hover {
 
     }
 
-    .text-next-to-banner{
-      width:33.33%;
-      line-height: 1.6rem;
-      padding-left:2rem;
-      padding-top: 4rem;
-      color: #3e5f64;
-    }
+
 
     .middle-grid-left-box{
       width: 33.33333%;
