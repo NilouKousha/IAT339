@@ -1,78 +1,72 @@
-.body-footer {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
-  margin: 0;
-  font: 16px Sans-Serif;
-}
-
 footer {
-  display: flex;
-  flex-direction: column;
-  background: #706F6F;
+  background: #3c4443;
   color: white;
-  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
+  padding-top: 2rem;
+  padding-left: 2rem;
   box-sizing: border-box;
-  position: absolute;
-  /*bottom: -500px;*/
-  width:100%;
-}
-
-.content-footer {
-  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
-}
-
-.ul-footer{
-  list-style: none;
-  margin: 10px;
-}
-
-.li-footer{
-  margin-top: 10px;
-}
-
-.footer-text-field{
-  background-color: #C5C5C5;
-  color: white;
-  box-sizing: border-box;
-  border: none;
-  padding: 5px;
-  position: relative;
-  right: 0px;
-  width: 200px;
-  margin-right: 30px;
-
 }
 
 .footer-text{
-  text-align: center;
-  font-size: .5rem;
-  margin-bottom: -10px;
+  font-size: 1rem;
   box-sizing: border-box;
-}
+  letter-spacing: .1rem;
+  line-height: 2rem;
 
-.row-footer{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
   display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 15px;
-  margin-right: 15px;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
 }
 
-.middle{
-  margin: auto;
-  width: 60%;
-  padding: 10px;
+.section-row{
+  width: 100%;
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
 }
-.right{
-  margin-left: 600px
+
+.footer-item{
+  width: 33.33%;
 }
+
+.footer-text-small {
+  font-size: .8rem;
+}
+
+.footer-text-small-container{
+  text-align:center;
+}
+
+
+.footer-text-link:visited, .footer-text-link:hover, .footer-text-link:link{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 @media (max-width:500px){
 
-  .right{
-    margin:auto;
+  .footer-text-small {
+    font-size: .6rem;
   }
 
 }

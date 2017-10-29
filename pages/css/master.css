@@ -1,11 +1,10 @@
 body{
-x-overflow: hidden;
- padding-right: 1rem;
- width: 100%;
- height: auto;
- overflow-x: hidden;
- font-family: 'Josefin Sans', sans-serif;
-
+  overflow-x: hidden;
+  padding-right: 1rem;
+  width: 100%;
+  height: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
 }
 
 /*grid structure of the drop down menue*/
@@ -15,14 +14,18 @@ x-overflow: hidden;
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
 
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
   flex-wrap: wrap;
 
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-justify-content:space-between;
+  -ms-justify-content:space-between;
+  justify-content:space-between;
   z-index: -10;
+}
+
+.banner-box{
+  margin-top: -10rem;
 }
 
 .side-nav{
@@ -62,8 +65,9 @@ x-overflow: hidden;
 
 
 .container-home{
-  margin: 0px 0rem;
+  margin-top: 15rem;
 }
+/*navigation*/
 .navigation-box-horizontal{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -175,7 +179,6 @@ x-overflow: hidden;
 /*product*/
 .product-explanation{
   position: absolute;
-  left: 0;
   width: 100%;
   color: #333333;
   font-size: .6rem;
@@ -183,8 +186,7 @@ x-overflow: hidden;
 }
 
 .products-box{
-  margin-top: 20px;
-  margin-bottom: 70px;
+  margin-top: 6rem;
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -201,17 +203,36 @@ x-overflow: hidden;
   -ms-justify-content: space-around;
   justify-content: space-around;
 }
-/*product*/
 
-
-#side-menu{
-  padding-left: 3rem;
-}
 
 .ss-big-title{
   position: absolute;
-  margin-top: -30px;
-  margin-left: 20px;
+  margin-top: -3rem;
+  margin-left: 4rem;
+  z-index: 2;
+  font-size: 6vw;
+  color: #3e5f64;
+  letter-spacing: .1rem;
+}
+
+.medium-title{
+  font-size: 3vw;
+  color: #3e5f64;
+  letter-spacing: .1rem;
+  text-align: center;
+}
+
+.title{
+  font-size: 3vw;
+  color: #3e5f64;
+  letter-spacing: .1rem;
+  margin-left: 2rem;
+}
+
+.shopping-title{
+  position: absolute;
+  /*margin-top: -50px;*/
+  margin-left: 4rem;
   z-index: 2;
   font-size: 6vw;
   color: #3e5f64;
@@ -219,12 +240,32 @@ x-overflow: hidden;
 }
 
 
+.text-next-to-banner{
+  width:33.33%;
+  line-height: 1.6rem;
+  padding-left:2rem;
+  padding-top: 4rem;
+  color: #3e5f64;
+}
+
+.paragraph{
+  width:40%;
+  line-height: 1.6rem;
+  color: #3e5f64;
+  margin-left: 2rem;
+}
+
+
+
+#side-menu{
+  padding-left: 3rem;
+}
 
 .navigation-box-horizontal{
-  width:0px;
-  height: 0px;
-
+  width:0;
+  height: 0;
 }
+
 .shopping-cart-icon{
   position: absolute;
   right:2.5rem;
@@ -233,8 +274,8 @@ x-overflow: hidden;
 .main-nav-item-page-index{
   color:#606060;
   font-size:1.3vw;
-  z-index: 10;
-  /*font-weight: bold;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 .nav-menu-sliding-item{
@@ -247,19 +288,36 @@ x-overflow: hidden;
   letter-spacing: 0.075rem;
 }
 
-
 .navigation-box-horizontal a, .nav-menu-sliding-item a{
   text-align: center;
   letter-spacing: 0.075rem;
   text-decoration: none;
 }
 
-.navigation-box-horizontal a:hover, .nav-menu-sliding-item:hover, {
-  font-weight: bold;
+.navigation-box-horizontal a:hover, .nav-menu-sliding-item:hover {
   padding-bottom: 1.2rem;
-  /*background-color: #606060;*/
-  color: #3e5f64;
-  border-bottom: 1px solid gray;
+  color: #96b59c;
+  border-bottom: .08rem solid gray;
+}
+
+.home a.current-home{
+color: #96b59c;
+}
+
+.summer a.current-summer{
+color: #96b59c;
+}
+
+.winter a.current-winter{
+color: #96b59c;
+}
+
+.leather a.current-leather{
+color: #96b59c;
+}
+
+.campaign a.current-campaign{
+color: #96b59c;
 }
 
 .contact-us-container{
@@ -276,17 +334,18 @@ x-overflow: hidden;
   justify-content: space-around;
 
   margin-top:2rem;
-
-
 }
+
+/*contact us*/
 
 .phone-contact{
   padding-top: 4rem;
-  align-self:flex-start;
+  display: flex;
+  flex-direction: column;
 }
 .email-contact{
   padding-top: 4rem;
-  align-self: flex-end;
+  width: 50%;
 }
 
 .contactus-coverphoto{
@@ -294,13 +353,15 @@ x-overflow: hidden;
   height: auto;
 }
 
+/*contact us*/
+
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],input[type=email],select,textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border-radius: .2rem; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -313,7 +374,7 @@ input[type=submit] {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: .2rem;
     cursor: pointer;
     height: 2.5rem;
 }
@@ -330,10 +391,11 @@ input[type=submit]:hover {
 }
 /* Add a background color and some padding around the form */
 .form-container, .contact-us-container{
-    border-radius: 5px;
+    border-radius: .2rem;
     background-color: #f2f2f2;
-    padding-top: 20px;
+    padding-top: 2rem;
     color:gray;
+    padding-bottom: 2rem;
 }
 
 .call-number{
@@ -364,7 +426,7 @@ input[type=submit]:hover {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 4rem;
-    border: 1px solid #888;
+    border: .08rem solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
     position: relative;
 
@@ -464,11 +526,11 @@ input[type=submit]:hover {
   width: 50%;
   text-align: center;
 }
-@media (min-width:750px) {
+@media (min-width:500px) {
 
     .col-1of6 {
       width: 16.667%;
-      padding: 10px 5px;
+      padding: 4rem 1.5rem;
     }
 
     .nav-grid{
@@ -477,7 +539,7 @@ input[type=submit]:hover {
 
     .navigation-box-horizontal{
       width:60%;
-      padding: 3rem 2rem 2rem 1.6rem;
+      /*margin-bottom: 5rem;*/
     }
 
     .banner-photo-container{
@@ -486,15 +548,7 @@ input[type=submit]:hover {
     }
 
     .banner-photo-homepage{
-      margin-top: -3rem;
-    }
 
-    .text-next-to-banner{
-      width:33.33%;
-      line-height: 1.6rem;
-      padding-left:2rem;
-      padding-top: 4rem;
-      color: #3e5f64;
     }
 
 
@@ -515,8 +569,8 @@ input[type=submit]:hover {
       padding-right: 1rem;
     }
     .middle-grid-right-box{
-
     }
+
     .middle-grid-right-bottom-box{
       padding-top: 1rem;
     }
@@ -528,7 +582,8 @@ input[type=submit]:hover {
     }
 
     .product-box{
-      width:calc(33.333333% - 1rem);
+      margin-bottom: 8rem;
+      width:calc(25% - 1rem);
     }
 
 

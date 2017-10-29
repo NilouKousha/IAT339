@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/normalize.css">
-    <!-- <link rel="stylesheet" href="./css/page-main.css"> -->
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- fonts -->
@@ -16,7 +15,7 @@
   <body >
     <header>
     <nav id="horizontal-navigation-links" class="navbar navigation-box-horizontal">
-      <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
+      <a class="main-nav-item-page-index col-1of6 nav-item current-home" href="./index.html">Home</a>
       <a class="main-nav-item-page-index col-1of6 nav-item" href="./summer.html">Summer</a>
       <a class="main-nav-item-page-index col-1of6 nav-item" href="./winter.html">Winter</a>
       <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
@@ -24,7 +23,7 @@
     </nav>
     <!-- <svg height="24" width="24" class="nui-icon nui-icon-large-bag-empty rfx_35Gul" data-reactid="56"><path class="nui-icon-large-bag-empty-0" d="M23.5 9.5a1 1 0 0 0-1-1h-21a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h21a1 1 0 0 0 1-1v-13z" data-reactid="57"></path><path class="nui-icon-large-bag-empty-1" d="M6 8a6 6 0 1 1 12 0" data-reactid="58"></path></svg> -->
 
-    <a class="shopping-cart-icon" href="./shopping-bag-new.html"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
+    <a href="./shopping-bag-new.html" class="shopping-cart-icon"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
     <div id="side-menu" class="side-nav" >
       <a href="#" id="open-slide" class="open-slide">
         <svg id="hamburgur-icon" class="nav-menu-sliding-item" onClick="openSlideMenu()">
@@ -48,7 +47,8 @@
   <main class="container-home">
     <div class="banner-box">
       <div class="banner-photo-container">
-        <img class="banner-photo-homepage"src="./img/fw-coverphoto.jpg" alt="A lady wearing a green sweater">
+        <img class="banner-photo-homepage" src="./img/Cover.jpg" alt="A lady wearing a green sweater">
+
       </div>
       <div class="text-next-to-banner">
         <h1>Autumn is coming</h1>
@@ -59,82 +59,80 @@
     </div>
     <section class="middle-grid">
       <div class="middle-grid-left-box">
-        <img class="middle-grid-photo middle-grid-left-photo " src="./img/Banner-Left-Women.jpg" alt="">
+        <h1 class="ss-big-title">What's new</h1>
+        <a href="./winter.html"><img class="middle-grid-photo middle-grid-left-photo " src="./img/Banner-Left-Women.jpg" alt="image of a girl wearing a blue jacket and a pair of blue pants"></a>
       </div>
       <div class="middle-grid-right-box">
         <div class="middle-grid-right-top-box">
-          <img class="middle-grid-photo middle-grid-right-top-photo" src="./img/Banner-Top.jpg" alt="">
+          <a href="./leather.html"><img class="middle-grid-photo middle-grid-right-top-photo" src="./img/Banner-Top.jpg" alt="image of a blue purse"></a>
         </div>
         <div class="middle-grid-right-bottom-box">
           <div class="middle-grid-right-bottom-left-box">
-            <img class="middle-grid-photo middle-grid-right-bottom-left-photo" src="img/Banner-Left-Bottom.jpg" alt="">
+            <a href="./summer.html"><img class="middle-grid-photo middle-grid-right-bottom-left-photo" src="img/Banner-Left-Bottom.jpg" alt="image of a girl wearing a white cardigen"></a>
           </div>
           <div class="middle-grid-right-bottom-right-box">
-            <img class="middle-grid-photo middle-grid-right-bottom-right-photo" src="img/Banner-Right-Bottom.jpg" alt="">
+            <a href="./winter.html"><img class="middle-grid-photo middle-grid-right-bottom-right-photo" src="img/Banner-Right-Bottom.jpg" alt="image of a girl wearing a green coat"></a>
           </div>
         </div>
       </div>
+
+      <div class="">
+        <h2 class ="medium-title">The winter collection</h2>
+        <p>Choose a spectacular coat and finish your look from there</p>
+      </div>
+
     </section>
 
-    <div class="products-box selected-items-box sliding-photos ">
+    <div class="products-box selected-items-box sliding-photos">
+
       <div class="product-box">
-        <a class="product-link" href="#" >
-          <img class="product-image" src="img/fw-campaign-5.jpg" alt="">
+        <h2 class="ss-big-title">W 17</h2>
+        <a class="product-link" href="campaign.html" >
+          <img class="product-image" src="img/fw-campaign-5.jpg" alt="image of a girl wearing a leather suit">
           <div class="product-explanation">
-            <h2>this is the latest product ever</h2>
+            <h2>Veste en cuir napa</h2>
           </div>
         </a>
       </div>
       <div class="product-box">
-        <a class="product-link" href="#" >
-          <img class="product-image" src="img/fw-campaign-4.jpg" alt="">
+        <a class="product-link" href="campaign.html">
+          <img class="product-image" src="img/fw-campaign-4.jpg" alt="image of a girl wearing a brown coat">
           <div class="product-explanation">
-            <h2>this is the latest product ever</h2>
+            <h2>Cable knitted sweater</h2>
           </div>
         </a>
       </div>
       <div class="product-box">
-        <a class="product-link" href="#" >
-          <img class="product-image" src="img/fw-campaign-3.jpg" alt="">
+        <a class="product-link" href="campaign.html" >
+          <img class="product-image" src="img/fw-campaign-3.jpg" alt="image of a girl wearing a grey sweater">
           <div class="product-explanation">
-            <h2>this is the latest product ever</h2>
+            <h2>Cable knitted cardigen</h2>
           </div>
         </a>
       </div>
     </div>
   </main>
-  <script type="text/javascript" src="js/main.js"></script>
-
-  <!-- ///////////////////////footer nilou -->
+  <!-- ///////////////////////footer -->
   <footer>
-    <div class="row-footer">
-        <div class="col1"> <!-- first column-->
-          <nav class="nav-main">
-            <ul class="ul-footer">
-            <li class="li-footer">About</li>
-            <li class="li-footer"><a href="./contactus.html">Customer Service</a></li>
-            </ul>
-         </nav>
+      <div class="footer-text">
+        <div class="section-row">
+          <div class="footer-item">
+            <div><a href="./contactus.html" class="footer-text-link">About Us</a></div>
+            <div><a href="./contactus.html" class="footer-text-link">Contact Us</a></div>
+          </div>
+          <div class="footer-item">
+            <div><a href="http://www.sfu.ca/~nkousha/IAT339/StyleGuide/" class="footer-text-link">Style Guide</a></div>
+            <div><a href="./contactus.html" class="footer-text-link">References</a></div>
+          </div>
+          <div class="footer-item">
+            <div><a href="./contactus.html" class="footer-text-link">Return Policy</a></div>
+            <div><a href="./contactus.html" class="footer-text-link">Terms & Conditions</a></div>
+          </div>
         </div>
-
-        <div> <!-- second column-->
-          <nav class="nav-main">
-            <ul class="ul-footer">
-            <li class="li-footer">Terms & Use</li>
-            <li class="li-footer">Privacy Policy</li>
-            </ul>
-         </nav>
+        <div class="footer-text-small-container"><p class="footer-text-small">@2017 IAT 339</p></div>
         </div>
-
-        <div class="right">
-          <form>
-            <input type="text" value="Suscribe" class="footer-text-field">
-          </form>
-        </div>
-    </div> <!-- row-->
-        <p class="middle footer-text">@2017 IAT 339</p>
   </footer>
-  <!-- ///////////////////////footer nilou -->
-
+  <!-- ///////////////////////footer-->
+  <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
