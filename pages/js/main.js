@@ -16,50 +16,43 @@ var slidingMenuIsExpanded = false;
 
 
 
-if(width < 500){
-  	console.log("Window width is less than 500px, collapsing menu.");
-}
-
-
-
 
 var hamburgerIcon = document.getElementById('hamburgur-icon');
 var slidingMenu = document.getElementById('side-menu');
 var horizontalnavigationBox = document.getElementById('horizontal-navigation-links');
+var slidingitems = document.getElementById('nav-menu-sliding-items');
 
-
-
+window.addEventListener("resize", function() {
+  // console.log("window is resizing");
+  hideORShow();
+} );
 
 function hideORShow(){
-  if(width > 668){
+  width = window.innerWidth;
+  if(width > 750){
     console.log("Inside of hideOrShow function - Window width is greater than 500px, hiding hamburger");
-    // hamburgerIcon.style.visibility = "hidden";
     slidingMenu.style.visibility = "hidden";
-    // hamburgerIcon.style.width = "0";
-    // hamburgerIcon.style.height = "0";
-    slidingMenu.style.width = "0";
-    slidingMenu.style.height = "0";
+    hamburgerIcon.style.visibility = "hidden";
+    horizontalnavigationBox.style.visibility="visible";
 
   }
   else{
     console.log("Inside of hideOrShow function - Window width is less than 500px, revealing hamburger");
+    slidingMenu.style.visibility = "visible";
     horizontalnavigationBox.style.visibility = "hidden";
-    horizontalnavigationBox.style.width = "0";
-    horizontalnavigationBox.style.height = "0";
     hamburgerIcon.style.visibility = "visible";
-    slidingMenu.style.width = "0";
-    slidingMenu.style.height = "0";
+    slidingitems.style.visibility="hidden";
   }
 }
 
 function openSlideMenu(){
   console.log("hamburger btn clicked");
   if(slidingMenuIsExpanded==false){
-    slidingMenu.style.visibility = "visible";
+    slidingitems.style.visibility = "visible";
     slidingMenuIsExpanded=true;
   }
   else{
-    slidingMenu.style.visibility = "hidden";
+    slidingitems.style.visibility = "hidden";
     slidingMenuIsExpanded=false;
   }
 }

@@ -3,52 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- <link rel="stylesheet" href="./css/page-main.css"> -->
+    <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
-
     <!-- fonts -->
-  <title>Home Page</title>
+  <title>Detail-Page</title>
   </head>
-  <body>
-    <main class="main-container">
-      <header class="header-main header-box">
-        <!-- the top navigation bar -->
-        <div class="nagivation-section">
-          <nav class="text-based-link-navigation">
-            <a class="main-nav-item-page-index" href="./index.html">Home</a>
-            <a class="main-nav-item-page-index" href="./summer.html">Summer</a>
-            <a class="main-nav-item-page-index" href="./winter.html">Winter</a>
-            <a class="main-nav-item-page-index" href="./leather.html">Leather</a>
-          </nav>
-          <nav class="icon-based-link-navigation">
-            <!-- <li class="icons-index-page"><a href="#"><img src="./img/search24.png" alt="search-icon"></a></li>
-            <li class="icons-index-page"><a href="./login.html"><img src="./img/account24.png" alt="login-icon"></a></li> -->
-            <li class="icons-index-page"><a href="./shopping.html"><img src="./img/shopping-cart24.png" alt="shpping-cart logo"></a></li>
-            <!-- <li class="icons-index-page"><a href="./whishList.html"><img src="./img/wishlist32.png" alt="Wish list logo"></a></li> -->
-          </nav>
-        </div>
-        </header>
+  <body onload="hideORShow()">
+    <header>
+      <nav id="horizontal-navigation-links" class="navbar navigation-box-horizontal">
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./summer.html">Summer</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./winter.html">Winter</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
+        <a class="main-nav-item-page-index col-1of6 nav-item" href="./campaign.html">Campaign</a>
+      </nav>
+      <!-- <svg height="24" width="24" class="nui-icon nui-icon-large-bag-empty rfx_35Gul" data-reactid="56"><path class="nui-icon-large-bag-empty-0" d="M23.5 9.5a1 1 0 0 0-1-1h-21a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h21a1 1 0 0 0 1-1v-13z" data-reactid="57"></path><path class="nui-icon-large-bag-empty-1" d="M6 8a6 6 0 1 1 12 0" data-reactid="58"></path></svg> -->
+
+      <a class="shopping-cart-icon" href="./shopping-bag-new.html"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
+      <div id="side-menu" class="side-nav" >
+        <a href="#" class="open-slide">
+          <svg id="hamburgur-icon" class="nav-menu-sliding-item" onClick="openSlideMenu()">
+            <path class="hamburgur-icon-bar"  d="M0,5 30,5" stroke="red" stroke-width="5"/>
+            <path class="hamburgur-icon-bar" d="M0,14 30,14" stroke="red" stroke-width="5"/>
+            <path class="hamburgur-icon-bar" d="M0,23 30,23" stroke="red" stroke-width="5"/>
+          </svg>
+        </a>
+        <a class="nav-menu-sliding-item" href="./index.html">Home</a>
+        <a class="nav-menu-sliding-item" href="./summer.html">Summer</a>
+        <a class="nav-menu-sliding-item" href="./winter.html">Winter</a>
+        <a class="nav-menu-sliding-item" href="./leather.html">Leather</a>
+        <a class="nav-menu-sliding-item" href="./campaign.html">Campaign</a>
+      </div>
+    </header>
+      <main class="container-home">
         <section class="product-detail-box">
           <div class="product-detail-photo-container">
             <img class="product-detail-photo" src="./img/fw-1.jpg" alt="">
           </div>
           <div class="product-detail-description-box">
             <div class="product-detail-description-top">
-
+              top content
             </div>
             <div class="product-detail-description-middle">
-              <p>dsdflsadfsajfdlfds</p>
-              <p>adfsalddsaldafdlsakjfdlsa</p>
-              <p>fdsalfksdlskjlsafdsldksafd</p>
+              <a href="#">Leather Dark Red Pants</a>
+              <a href="#">Knit Gray Sweater</a>
+
             </div>
             <div class="product-detail-description-bottom">
-
+              bottom content
             </div>
           </div>
         </section>
       </main>
+      <script type="text/javascript" src="js/main.js"></script>
     </body>
   </html>

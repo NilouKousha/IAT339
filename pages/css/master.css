@@ -99,7 +99,7 @@ x-overflow: hidden;
   margin-top: 2rem;
 }
 
-.campaign-coverphoto, .fw-coverphoto, .ss-coverphoto, .product-image{
+.campaign-coverphoto, .fw-coverphoto, .ss-coverphoto, .leather-coverphoto, .product-image{
   width: 100%;
 }
 
@@ -283,7 +283,6 @@ x-overflow: hidden;
 .phone-contact{
   padding-top: 4rem;
   align-self:flex-start;
-
 }
 .email-contact{
   padding-top: 4rem;
@@ -404,7 +403,68 @@ input[type=submit]:hover {
   padding-top: 3rem;
 }
 
-@media (min-width:668px) {
+/*product-detail-page*/
+.product-detail-box{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+
+}
+
+.product-detail-description-box{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+}
+
+.product-detail-photo{
+  width: 100%;
+}
+
+.product-detail-photo-container{
+  align-self:flex-start;
+}
+
+.product-detail-description-middle{
+  /*align-self: flex-end;*/
+  margin: 0rem 5rem;
+}
+
+.product-detail-description-bottom, .product-detail-description-top{
+  display: none;
+}
+
+.product-detail-description-middle a{
+  display: block;
+  padding: 1rem 2rem;
+  background-color: #d3d3d3;
+  margin: 2rem 0rem;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+}
+@media (min-width:750px) {
 
     .col-1of6 {
       width: 16.667%;
@@ -469,6 +529,27 @@ input[type=submit]:hover {
 
     .product-box{
       width:calc(33.333333% - 1rem);
+    }
+
+
+    /*detail page*/
+    .product-detail-photo-container{
+      width: calc(40% - 0.2rem);
+      background-color: green;
+    }
+
+    .product-detail-description-top, .product-detail-description-bottom{
+      height: 20%;
+    }
+
+    .product-detail-description-middle{
+      height: 60%;
+      background-color: gray;
+    }
+
+    .product-detail-description-box{
+      width: 60%;
+      background-color: red;
     }
 
 }
