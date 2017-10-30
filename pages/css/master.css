@@ -67,24 +67,9 @@ body{
 .container-home{
   margin-top: 15rem;
 }
+
 /*navigation*/
-.navigation-box-horizontal{
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
 
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  -webkit-justify-content: space-around;
-  -ms-justify-content: space-around;
-  justify-content: space-around;
-
-  z-index: 10;
-}
-
-/*styling */
 .nav-item{
   padding: 0.5rem;
 }
@@ -261,22 +246,14 @@ body{
   padding-left: 3rem;
 }
 
-.navigation-box-horizontal{
-  width:0;
-  height: 0;
-}
+
 
 .shopping-cart-icon{
   position: absolute;
   right:2.5rem;
   top: 3rem;
 }
-.main-nav-item-page-index{
-  color:#606060;
-  font-size:1.3vw;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-}
+
 
 .nav-menu-sliding-item{
   padding-top: 1rem;
@@ -288,6 +265,37 @@ body{
   letter-spacing: 0.075rem;
 }
 
+
+.main-nav-item-page-index{
+  color:#606060;
+  font-size:1.3vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+
+.navigation-box-horizontal{
+  width:0;
+  height: 0;
+  width:60%;
+
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+
+  z-index: 10;
+}
+
+
 .navigation-box-horizontal a, .nav-menu-sliding-item a{
   text-align: center;
   letter-spacing: 0.075rem;
@@ -295,9 +303,11 @@ body{
 }
 
 .navigation-box-horizontal a:hover, .nav-menu-sliding-item:hover {
-  padding-bottom: 1.2rem;
+  /*margin-bottom: 20px;*/
   color: #96b59c;
-  border-bottom: .08rem solid gray;
+  /*border-bottom: .08rem solid gray;*/
+  text-decoration: underline;
+  text-decoration-color: gray;
 }
 
 .home a.current-home{
@@ -537,10 +547,7 @@ input[type=submit]:hover {
       width: 60%;
     }
 
-    .navigation-box-horizontal{
-      width:60%;
-      /*margin-bottom: 5rem;*/
-    }
+
 
     .banner-photo-container{
       width: 66.33%;
