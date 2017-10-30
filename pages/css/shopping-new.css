@@ -14,7 +14,7 @@ html, body {
 }
 
 .shopping-cart {
-  margin-top:20rem;
+  /*margin-top:20rem;*/
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
