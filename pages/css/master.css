@@ -6,10 +6,14 @@ body{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: normal;
 }
-
+*, *:after, *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
 /*grid structure of the drop down menue*/
 
-.nav-grid, .banner-box{
+.banner-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -24,10 +28,12 @@ body{
   z-index: -10;
 }
 
-.banner-box{
+/*.banner-box{
   margin-top: -10rem;
+}*/
+.middle-grid-photo{
+  width: 100%;
 }
-
 .side-nav{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -47,28 +53,9 @@ body{
         clear: both;
 }
 
-*, *:after, *:before {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-}
-
-[class*='col-'] {
-        float: left;
-        padding: 0;
-        text-align: left;
-}
-
-.col-1of6{
-        width: 40%;
-}
 
 
-.container-home{
-  margin-top: 15rem;
-}
-/*navigation*/
-.navigation-box-horizontal{
+.navigation-bar{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -81,27 +68,80 @@ body{
   -ms-justify-content: space-around;
   justify-content: space-around;
 
-  z-index: 10;
-}
-
-/*styling */
-.nav-item{
-  padding: 0.5rem;
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 
-#hamburgur-icon,#side-menu{
-  visibility: hidden;
-  z-index: 99;
+
+[class*='col-'] {
+        float: left;
+        text-align: center;
+
 }
+
+/* Add a black background color to the top navigation */
+.topnav{
+  position: absolute;
+  left: 2rem;
+  top:1rem;
+  overflow: hidden;
+  text-align: center;
+  width:90%;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: block;
+    color:#606060;
+    /*font-size:1.3vw;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    /*text-align: center;*/
+    /*padding: 1rem 3rem 0.2rem 3rem;*/
+    text-decoration: none;
+    font-size: 17px;
+    width:14%;
+}
+
+.topnav a:not(:first-child) {
+  text-align: center;
+}
+.topnav a:first-child {
+  text-align: left;
+}
+/* Change the color of links on hover */
+.topnav a:not(:first-child):hover, .topnav a:not(:first-child):focus, .topnav a:not(:first-child):active {
+    border-bottom:1px solid #ddd;
+    padding-bottom: 1.1rem;
+    color: #96b59c;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.shopping-icon{
+  position: absolute;
+  right:2rem;
+  top:0rem;
+}
+
+.container-home{
+  margin-top: 4rem;
+}
+
 
 
 .banner-photo-homepage{
-  width: 100%;
   height:auto;
-  z-index: -10;
-  margin-top: 2rem;
+  width: 100%;
+
 }
+
+
 
 .campaign-coverphoto, .fw-coverphoto, .ss-coverphoto, .leather-coverphoto, .product-image{
   width: 100%;
@@ -169,13 +209,6 @@ body{
 }
 
 
-
-
-#hamburgur-icon{
-  height:30px;
-  width:30px;
-  padding-top: 0rem;
-}
 /*product*/
 .product-explanation{
   position: absolute;
@@ -241,7 +274,6 @@ body{
 
 
 .text-next-to-banner{
-  width:33.33%;
   line-height: 1.6rem;
   padding-left:2rem;
   padding-top: 4rem;
@@ -255,50 +287,6 @@ body{
   margin-left: 2rem;
 }
 
-
-
-#side-menu{
-  padding-left: 3rem;
-}
-
-.navigation-box-horizontal{
-  width:0;
-  height: 0;
-}
-
-.shopping-cart-icon{
-  position: absolute;
-  right:2.5rem;
-  top: 3rem;
-}
-.main-nav-item-page-index{
-  color:#606060;
-  font-size:1.3vw;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-}
-
-.nav-menu-sliding-item{
-  padding-top: 1rem;
-  font-size: 4vw;
-  color:black;
-  z-index: 10;
-  justify-content: center;
-  text-decoration: none;
-  letter-spacing: 0.075rem;
-}
-
-.navigation-box-horizontal a, .nav-menu-sliding-item a{
-  text-align: center;
-  letter-spacing: 0.075rem;
-  text-decoration: none;
-}
-
-.navigation-box-horizontal a:hover, .nav-menu-sliding-item:hover {
-  padding-bottom: 1.2rem;
-  color: #96b59c;
-  border-bottom: .08rem solid gray;
-}
 
 .home a.current-home{
 color: #96b59c;
@@ -526,32 +514,65 @@ input[type=submit]:hover {
   width: 50%;
   text-align: center;
 }
-@media (min-width:500px) {
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 668px) {
+
+  .topnav a:not(:first-child) {
+    display: none;
+
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 668px) {
+  /*.topnav.responsive {position: relative;}*/
+  .topnav.responsive a.icon {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a:not(:first-child) {
+    padding-top:1rem;
+  }
+
+  .topnav.responsive a:not(:first-child):hover, .topnav.responsive a:not(:first-child):focus, .topnav.responsive a:not(:first-child):active {
+      border-bottom:1px solid #ddd;
+      /*padding-bottom: 1.1rem;*/
+      color: #96b59c;
+  }
+}
+
+
+
+
+@media (min-width:668px) {
+
+  .text-next-to-banner{
+    width:33.33%;
+  }
 
     .col-1of6 {
       width: 16.667%;
-      padding: 4rem 1.5rem;
     }
 
-    .nav-grid{
-      width: 60%;
-    }
-
-    .navigation-box-horizontal{
-      width:60%;
-      /*margin-bottom: 5rem;*/
-    }
 
     .banner-photo-container{
       width: 66.33%;
-      z-index: -1;
+      /*z-index: -1;*/
     }
-
-    .banner-photo-homepage{
-
-    }
-
-
 
     .middle-grid-left-box{
       width: 33.33333%;
@@ -606,5 +627,11 @@ input[type=submit]:hover {
       width: 60%;
       background-color: red;
     }
+
+    #hamburgur-icon,#side-menu{
+      visibility: hidden;
+      /*z-index: 99;*/
+    }
+
 
 }
