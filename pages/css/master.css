@@ -125,7 +125,7 @@ body{
 }
 
 .container-home{
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 
@@ -133,7 +133,6 @@ body{
 .banner-photo-homepage{
   height:auto;
   width: 100%;
-
 }
 
 
@@ -237,11 +236,12 @@ body{
 
 .product-box{
   margin-bottom: 8rem;
+  /*width:calc(25% - 1rem);*/
 }
 
-.product-box: hover{
-  background-color: white;
-  opacity:.8;
+.product-box:hover, .product-box:focus, .product-box:active{
+  background: white;
+  opacity: 0.8;
 }
 .ss-big-title{
   position: absolute;
@@ -540,7 +540,6 @@ input[type=submit]:hover {
 
   .topnav a:not(:first-child) {
     display: none;
-
   }
 
   .topnav a.icon {
@@ -548,7 +547,6 @@ input[type=submit]:hover {
     display: block;
   }
 
-}
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 668px) {
@@ -624,7 +622,7 @@ input[type=submit]:hover {
     }
 
     .product-box{
-      margin-bottom: 8rem;
+      /*margin-bottom: 8rem;*/
       width:calc(25% - 1rem);
     }
 
