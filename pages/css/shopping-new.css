@@ -70,6 +70,7 @@ html, body {
   font-size: 14px;
   color: #43484D;
   font-weight: 400;
+  padding-bottom: 1rem;
 }
 
 .description span:first-child {

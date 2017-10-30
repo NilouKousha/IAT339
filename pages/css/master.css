@@ -576,7 +576,7 @@ select:focus > option:checked{
 }
 
 .samll-discription{
-  padding-top: 2rem;
+
   padding-left: 2rem;
   margin-left: 8rem;
   text-align: left;
@@ -734,6 +734,16 @@ modal for detail product-image
 #Secure-Checkout:hover, #Secure-Checkout:focus, #Secure-Checkout:active{
   background-color: gray;
 }
+
+/*shopping detail*/
+.quantity-text-input{
+  margin-left: 1rem;
+  width: 15% !important;
+  height: auto;
+  background:#F8F8F8;
+}
+
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 668px) {
 
