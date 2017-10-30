@@ -54,7 +54,6 @@ body{
 }
 
 
-
 .navigation-bar{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -75,7 +74,6 @@ body{
 [class*='col-'] {
         float: left;
         text-align: center;
-
 }
 
 /* Add a black background color to the top navigation */
@@ -127,7 +125,7 @@ body{
 }
 
 .container-home{
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 
@@ -213,6 +211,9 @@ body{
   color: #333333;
   font-size: .6rem;
   letter-spacing: .1rem;
+  padding-top:1rem;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .products-box{
@@ -234,13 +235,20 @@ body{
   justify-content: space-around;
 }
 
+.product-box{
+  margin-bottom: 8rem;
+}
 
+.product-box: hover{
+  background-color: white;
+  opacity:.8;
+}
 .ss-big-title{
   position: absolute;
   margin-top: -3rem;
   margin-left: 4rem;
   z-index: 2;
-  font-size: 6vw;
+  font-size: 6rem;
   color: #3e5f64;
   letter-spacing: .1rem;
 }
@@ -516,6 +524,20 @@ input[type=submit]:hover {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 668px) {
 
+  .container-home{
+    margin-top: 6rem;
+  }
+
+  .ss-big-title{
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: 4rem;
+    z-index: 2;
+    font-size: 2rem;
+    color: #3e5f64;
+    letter-spacing: .1rem;
+  }
+
   .topnav a:not(:first-child) {
     display: none;
 
@@ -530,6 +552,8 @@ input[type=submit]:hover {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 668px) {
+
+
   /*.topnav.responsive {position: relative;}*/
   .topnav.responsive a.icon {
     position: relative;
