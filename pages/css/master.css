@@ -34,26 +34,6 @@ body{
 .middle-grid-photo{
   width: 100%;
 }
-.side-nav{
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
-
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  height: 100px;
-}
-
-
-.grid:after {
-        content: "";
-        display: block;
-        clear: both;
-}
-
-
 
 .navigation-bar{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -70,7 +50,8 @@ body{
 
   position: relative;
   width: 100%;
-  margin-top: 2rem;
+
+  margin-bottom: 8rem;
 }
 
 
@@ -130,7 +111,7 @@ body{
 }
 
 .container-home{
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 
@@ -402,6 +383,14 @@ input[type=submit]:hover {
   font-weight: bolder;
 }
 
+#submit-btn{
+  width: 100%;
+}
+
+#bag{
+  background-color: white;
+}
+
 /*/css for model*/
 /* The Modal (background) */
 .modal {
@@ -412,7 +401,7 @@ input[type=submit]:hover {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -458,8 +447,9 @@ input[type=submit]:hover {
   text-align: center;
 }
 .model-text, #modal-message{
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
+
 
 /*product-detail-page*/
 .product-detail-box{
@@ -471,9 +461,9 @@ input[type=submit]:hover {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  -webkit-justify-content: space-around;
-  -ms-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-justify-content: space-around
+  -ms-justify-content: space-between;
+  justify-content: space-between;
 
 }
 
@@ -505,8 +495,20 @@ input[type=submit]:hover {
 }
 
 .product-detail-description-middle{
-  /*align-self: flex-end;*/
-  margin: 0rem 5rem;
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  margin: 0rem 3rem;
+  position: relative;
 }
 
 .product-detail-description-bottom, .product-detail-description-top{
@@ -515,15 +517,222 @@ input[type=submit]:hover {
 
 .product-detail-description-middle a{
   display: block;
-  padding: 1rem 2rem;
-  background-color: #d3d3d3;
-  margin: 2rem 0rem;
   text-decoration: none;
-  width: 50%;
+  color: #606060;
+}
+
+.product-detail-description-middle a:hover{
+  color: #96b59c;
+}
+
+.about-product{
+  line-height: 2rem;
+}
+.pricing{
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.sizing{
+  width: 100%;
+  margin-bottom:3rem;
+}
+
+select:hover {
+    background-color:#F8F8F8;
+}
+
+select:focus > option:checked{
+    background: #000 !important;
+}
+.add-to-bag-botton{
+  color:white !important;
+  background-color: black;
+  padding: 0.9rem 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 
+.unit-number{
+  width: 15%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 2rem;
 
+}
+
+.unit-number-input{
+  text-align: center;
+}
+
+.product-detail-box{
+  margin-bottom: 5rem;
+}
+.add-to-bag-botton:hover, .add-to-bag-botton:focus, .add-to-bag-botton:active{
+  background: gray;
+}
+
+.samll-discription{
+  padding-top: 2rem;
+  padding-left: 2rem;
+  margin-left: 8rem;
+  text-align: left;
+}
+.samll-discription-text{
+  padding-bottom: 1rem;
+}
+.samll-discription-text:last-child{
+  margin-top: 2rem;
+}
+#remove:hover{
+  background-color: gray;
+}
+#remove{
+    background: black;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+}
+.modal-shopping-result{
+  text-align: left;
+  position: relative;
+  padding-top: 2rem;
+}
+
+#view-shopping-bag{
+  position: absolute;
+  left: 0;
+}
+#subtotal{
+  position: absolute;
+  right:1.5rem;
+}
+.white-shopping-icon{
+  width: 3rem;
+  height: auto;
+}
+
+.add-to-bag-botton-modified{
+  color:white !important;
+  background-color: black;
+  padding: 0rem 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.add-to-bag-botton-modified:hover{
+  background-color: gray;
+}
+/*
+modal for detail product-image
+*/
+
+.model-shopping-context,.modal-shopping-info-container{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modal-shopping-summery{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+.shopping-detail-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 50; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.shopping-detail-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 4rem;
+    border: .08rem solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    position: relative;
+  }
+
+/* The Close Button */
+.close-icon {
+    color: #aaa;
+    position: absolute;
+    right:1rem;
+    top: 0.5rem;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-icon:hover,
+.close-icon:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-icon-background{
+  width: 100%;
+  background-color: #000;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+.model-shopping-context{
+  text-align: center;
+}
+#title-modal-message, #modal-shopping-info-container{
+  padding-top: 3rem;
+
+}
+
+.close-icon-background{
+  text-align: center;
+  padding-top: 1rem;
+    color:white;
+}
+
+#Secure-Checkout{
+  margin-top: 2rem;
+  background-color: black;
+  color:white;
+  padding: 0.6rem 1rem;
+  width: 100%;
+}
+#Secure-Checkout-text{
+  color:white;
+  text-decoration: none;
+}
+#Secure-Checkout:hover, #Secure-Checkout:focus, #Secure-Checkout:active{
+  background-color: gray;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 668px) {
 
@@ -558,9 +767,7 @@ input[type=submit]:hover {
   }
 
   .topnav.responsive a:not(:first-child):hover, .topnav.responsive a:not(:first-child):focus, .topnav.responsive a:not(:first-child):active {
-      border-bottom:1px solid #ddd;
-      /*padding-bottom: 1.1rem;*/
-      color: #96b59c;
+
   }
 }
 
@@ -622,24 +829,22 @@ input[type=submit]:hover {
       width: calc(40% - 0.2rem);
       background-color: green;
     }
-
+    .product-detail-description-middle{
+      width: calc(40% - 0.2rem);
+    }
     .product-detail-description-top, .product-detail-description-bottom{
       height: 20%;
     }
 
-    .product-detail-description-middle{
-      height: 60%;
-      background-color: gray;
-    }
 
     .product-detail-description-box{
-      width: 60%;
-      background-color: red;
+      width: 40%;
+
     }
 
-    #hamburgur-icon,#side-menu{
-      visibility: hidden;
-      /*z-index: 99;*/
+    .title-discription{
+      margin-bottom: 2rem;
+      text-align: left;
     }
 
 
