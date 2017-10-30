@@ -1,405 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="./css/page-main.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="./css/footer.css" media="screen" title="no title" charset="utf-8">
-    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
-    <meta name="robots" content="noindex,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <!-- fonts -->
+  <title>Checkout</title>
   </head>
-  <body>
-    <header class="header-page-index">
-      <div class="header-page-index">
-        <div class="logo-page-index">
-          <a href="./pages-index.html">logo goes here</a>
+  <body class="home">
+
+  <header>
+    <div class="logo">
+      <h1 class="logo-title">Winter Wolf</h1>
+    </div>
+      <div class="navigation-bar">
+        <div class="topnav" id="myTopnav">
+          <a href="javascript:void(0);" class="icon" onclick="showOrHide()">&#9776;</a>
+          <a class="main-nav-item-page-index col-1of6 nav-item" href="./index.html">Home</a>
+          <a class="main-nav-item-page-index col-1of6 nav-item" href="./summer.html">Summer</a>
+          <a class="main-nav-item-page-index col-1of6 nav-item" href="./winter.html">Winter</a>
+          <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
+          <a class="main-nav-item-page-index col-1of6 nav-item" href="./campaign.html">Campaign</a>
         </div>
-        <div class="navigations-page-index">
-          <div class="navigations-container-page-index">
-            <nav class="main-nav-bar-page-index">
-              <ul>
-                <li><a class="main-nav-item-page-index" href="./woman.html">Women</a></li>
-                <li><a class="main-nav-item-page-index" href="./men.html">Men</a></li>
-                <li><a class="main-nav-item-page-index" href="./design.html">Design</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="interactive-icons-container-page-index">
-            <nav class="interactive-icons-page-index">
-              <li class="icons-index-page"><a href="#"><img src="./img/search24.png" alt="search-icon"></a></li>
-              <li class="icons-index-page"><a href="./login.html"><img src="./img/account24.png" alt="login-icon"></a></li>
-              <li class="icons-index-page"><a href="./shopping.html"><img src="./img/shopping-cart24.png" alt="shpping-cart logo"></a></li>
-              <li class="icons-index-page"><a href="./whishList.html"><img src="./img/wishlist32.png" alt="Wish list logo"></a></li>
-            </nav>
-          </div>
-        </div>
+        <a href="./shopping-bag-new.html" class="shopping-icon"><img src="./img/shopping-cart24-three.png" alt="shopping cart icon"></a>
       </div>
     </header>
-    <div class="container-checkout">
-        <div class="order-summary-checkout">
-          <!-- Title -->
-          <div class="title-order-summary-checkout">
-            Order Summary
-          </div>
-          <div class="summary-items-checkout">
-            <div class="delete-buttons-summary-checkout">
-              <span class="delete-btn-summary-checkout"><img src="./img/delete-icon.png" alt=""></span>
+    <main class="container-home">
+      <h2 id="Secure-checkout">Secure Checkout</h2>
+      <div class="secure-checkout-containter">
+        <div class="shipping-form-container">
+          <div class="shipping-form">
+            <div class="shipping-title">
+              <h3>Shipping Address</h3>
             </div>
-            <div class="image-summary-checkout">
-              <img class= "item1-summary-checkout"  src="./img/item-1.png" alt="" />
-            </div>
-            <div class="description-summary-checkout">
-              <span>Title</span>
-              <span>Brand</span>
-              <span>Colour</span>
-            </div>
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            <div class="quantity-summary-checkout">
-              <button class="plus-btn-summary-checkout" type="button" name="button">
-                <img src="./img/plus.png" alt="" />
-              </button>
-              <input type="text" name="name" value="1">
-              <button class="minus-btn-summary-checkout" type="button" name="button">
-                <img src="./img/minus.png" alt="" />
-              </button>
-            </div><!--quantity-summary-checkout-->
-            <div class="total-price-summary-checkout">* $number</div>
-          </div>
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-          <!-- Product #2 -->
-          <div class="summary-items-checkout">
-            <div class="delete-buttons-summary-checkout">
-                <span class="delete-btn-summary-checkout"><img src="./img/delete-icon.png" alt=""></span>
-            </div>
-            <div class="image-summary-checkout">
-              <img class= "item2-summary-checkout" src="./img/item-2.png" alt=""/>
-            </div>
-            <div class="description-summary-checkout">
-              <span>Title</span>
-              <span>Brand</span>
-              <span>Colour</span>
-            </div>
-            <div class="quantity-summary-checkout">
-              <button class="plus-btn-summary-checkout" type="button" name="button">
-                <img src="./img/plus.png" alt="" />
-              </button>
-              <input type="text" name="name" value="1">
-              <button class="minus-btn-summary-checkout" type="button" name="button">
-                <img src="./img/minus.png" alt="" />
-              </button>
-            </div><!--quantity-summary-checkout-->
-            <div class="total-price-summary-checkout">* $number</div>
+            <label for="adress">Address Line1 *</label>
+            <input type="text" id="adress" name="adress" placeholder="Your address">
+            <label for="adress">Address Line2</label>
+            <input type="text" id="adress" name="adress" placeholder="Your address">
+            <label class="country-dropdown" for="country">Country *</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="example@someting.com">
+            <label for="phone-number">Phone Number *</label>
+            <input type="number" id="phone-number" name="phone-number" placeholder="example@someting.com">
           </div>
 
-          <!-- Product #3 -->
-          <div class="summary-items-checkout">
-            <div class="delete-buttons-summary-checkout">
-              <span class="delete-btn-summary-checkout"><img src="./img/delete-icon.png" alt=""></span>
-              <!--<span class="like-btn"></span>-->
+          <div class="billing-payment">
+            <div class="shipping-title">
+              <h3>Billing and Payment</h3>
             </div>
-            <div class="image-summary-checkout">
-              <img class= "item3-summary-checkout" src="./img/item-3.png" alt="" />
+            <div class="payment-method">
+              <h3>Payment Method</h3>
+              <input class="payment-radio" type="radio" name="visa" value="Visa">Visa
+              <input class="payment-radio" type="radio" name="paypal" value="Paypal">Paypal
+              <input class="payment-radio" type="radio" name="interact" value="Interact">Interact
             </div>
-            <div class="description-summary-checkout">
-              <span>Title</span>
-              <span>Brand</span>
-              <span>Colour</span>
+            <div class="card-info">
+              <label for="card-number">Card Number *</label><br>
+              <input id="card-number" type="text" name="card-number" value="Your Card Number ...">
+              <span>
+              </span>
             </div>
-            <div class="quantity-summary-checkout">
-              <button class="plus-btn-summary-checkout" type="button" name="button">
-                <img src="./img/plus.png" alt="" />
-              </button>
-              <input type="text" name="name" value="1">
-              <button class="minus-btn-summary-checkout" type="button" name="button">
-                <img src="./img/minus.png" alt="" />
-              </button>
-            </div><!--quantity-summary-checkout-->
-            <div class="total-price-summary-checkout">* $number</div>
-          </div>
-
-        </div><!--shopping-cart-->
-
-
-      <div class="checkout-section">
-        <div class="title-order-summary-checkout checkout-title">
-          Checkout
-        </div>
-        <div class="step1-checkout">
-          <div class="steps-title-checkout">
-            Step 1: Account
-          </div>
-          <div class="account-form-container-checkout">
-            <div class="signin-checkout">
-              <div class="signin-title-checkout">
-                Sign In
-              </div>
-              <input type="text" name="email" value="place holder text">
-              <input type="text" name="password" value=" place holder text">
-              <button id="customer-signin-btn" type="button" name="button"> Sign In</button>
+            <div class="expiry">
+              <label for="expiray">Expiration Date *</label><br>
+              <input id="expiray" type="text" name="expiray" value="Year">
+              <span>/</span>
+              <input id="expiray" type="text" name="expiray" value="Month">
             </div>
-            <div class="login">
-              <div class="signin-title-checkout">
-                New Customer?
-              </div>
-              <input type="text" name="email" value="place holder text">
-              <div class="checkBox">
-                <input id="checkBox" type="checkbox"> <span>Create Account</span>
-              </div>
-              <button id="Guest-signin-btn" type="button" name="button"> Continue as Guest</button>
+            <div class="expiry">
+              <label for="expiray">Security Code *</label><br>
+              <input id="expiray" type="number" name="expiray" value="Year">
             </div>
-          </div>
-        </div>
-        <div class="step2">
-          <div class="steps-title-checkout">
-            Step 2: Shipping Address
-          </div>
-          <div class="shipping-address">
-            <div class="shipping-address-container">
-              <div class="signin-title-checkout">
-                Enter New Address
-              </div>
-              <input type="text" name="email" value="First Name">
-              <input type="text" name="password" value="Last Name">
-              <input type="text" name="password" value="Address">
-              <input id="input-city" type="text" name="password" value="City">
-              <select>
-                <option value="volvo">Select State</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <input id="input-zip-code-checkout"  type="text" name="password" value="Zip Code">
-              <select>
-                <option value="volvo">United States</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <input type="text" name="password" value="Phone Number">
-              <button id="customer-signin-btn-checkout" type="button" name="button">Add Address</button>
+            <div class="checkout-button">
+              <input id="final-Submit" type="submit" value="Submit Your Order" onclick="openModel()">
             </div>
-          </div>
-        </div>
-
-        <div class="step3-checkout">
-          <div class="steps-title-checkout">
-            Step 3: Shipping Method
-          </div>
-          <div class="mail-checkout">
-            <div class="radio-mail-group-checkout">
-              <div class="title-canada-post-chekcout">
-                Canada Post
-              </div>
-              <form class= "" action="">
-                <input class="radio-mail-checkout" type="radio" name="gender" value="male"> Expedited Parcel $5.00<br>
-                <input class="radio-mail-checkout" type="radio" name="gender" value="female"> Xpresspost $10.00<br>
-                <input class="radio-mail-checkout" type="radio" name="gender" value="other"> Priority $20.00
-              </form>
-            </div>
-            <div class="radio-store-checkout">
-              <div class="title-canada-post-chekcout">
-                Ship To Store
-              </div>
-                <input class="radio-mail-checkout" type="radio" name="gender" value="male"> adress of some local store $20.00<br>
-            </div>
-
-          </div>
-        </div>
-        <div class="step4-checkout">
-          <div class="payment-method-title-checkout">
-            Step 4: Payment Method
-          </div>
-          <div class="payment-method-checkout">
-            <div class="credit-card-title-checkout">
-              Enter your credit card or debit card number
-            </div>
-            <input type="text" name="" value="">
-            <div class="paypal">
-              <a href="#">paypal</a>
-            </div>
-          </div>
-        </div>
-        <div class="step5-review-checkout">
-          <div class="review-title-checkout">
-            Step 5: Review
-          </div>
-          <div class="Review">
-
-
-            <div class="preview-order-container-checkout">
-              <!-- Title -->
-              <div class="preview-title-checkout">
-                Preview your order
-              </div>
-              <div class="item-preview-checkout">
-                <div class="buttons-preview-checkout">
-                    <span class="delete-btn-summary-checkout">1.</span>
-                </div>
-                <div class="image-preview-checkout">
-                  <img class= "item1-preview-checkout"  src="./img/item-1.png" alt="" />
-                </div>
-                <div class="description-preview-checkout">
-                  <span>Title</span>
-                  <span>Brand</span>
-                  <span>Colour</span>
-                </div>
-                <div class="unit-preview-checkout">
-                  <span>How many?</span>
-                  <span>Size</span>
-                </div>
-                <div class="total-price-preview-checkout"> Price </div>
-              </div>
-
-              <!-- Product #2 -->
-              <div class="item2-preview">
-                <div class="buttons-preview-checkout">
-                    <span class="delete-btn-summary-checkout">2.</span>
-                </div>
-                <div class="image-preview-checkout">
-                  <img class= "item1-preview-checkout"  src="./img/item-1.png" alt="" />
-                </div>
-                <div class="description-preview-checkout">
-                  <span>Title</span>
-                  <span>Brand</span>
-                  <span>Colour</span>
-                </div>
-                <div class="unit-preview-checkout">
-                  <span>How many?</span>
-                  <span>Size</span>
-                </div>
-                <div class="total-price-preview-checkout"> Price </div>
-              </div>
-
-              <!-- Product #3 -->
-              <div class="item3-preview">
-                <div class="buttons-preview-checkout">
-                    <span class="delete-btn-summary-checkout">3.</span>
-                </div>
-                <div class="image-preview-checkout">
-                  <img class= "item1-preview-checkout"  src="./img/item-1.png" alt="" />
-                </div>
-                <div class="description-preview-checkout">
-                  <span>Title</span>
-                  <span>Brand</span>
-                  <span>Colour</span>
-                </div>
-                <div class="unit-preview-checkout">
-                  <span>How many?</span>
-                  <span>Size</span>
-                </div>
-                <div class="total-price-preview-checkout"> Price </div>
-              </div>
-
-
-              <div class="total-price-preview-checkout">
-                <div class="price-component-checkout">
-                  <div class="total-price-title-checkout">
-                    Net price
-                  </div>
-                  <div class="space-checkout">
-                    ---------------------------------------------------------
-                  </div>
-                  <div class="total-price-number-checkout">
-                    $total price
-                  </div>
-                </div>
-                <div class="price-component-checkout">
-                  <div class="total-price-title-checkout">
-                    Net price
-                  </div>
-                  <div class="space-checkout">
-                    ---------------------------------------------------------
-                  </div>
-                  <div class="total-price-number-checkout">
-                    $total price
-                  </div>
-                </div>
-
-              </div>
-
-            </div><!--shopping-cart-->
-
-
-
-
           </div>
 
         </div>
 
-
-      </div><!--leftItem -->
-
-
+      </div>
+    </main>
 
 
+    <!-- The Modal -->
+  <div id="myModal" class="modal">
 
-    </div><!--container-->
-    <footer>
-      <div class="row-footer">
-          <div class="col1"> <!-- first column-->
-            <nav class="nav-main">
-              <ul class="ul-footer">
-              <li class="li-footer">Link 1</li>
-              <li class="li-footer">Link 2</li>
-              </ul>
-           </nav>
-          </div>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="close-icon-background">
+        <span class="close-icon" onclick="closeModal()">&times;</span>
+      </div>
+      <div class="model-text">
+        <h3 id="title-modal-message">Thank you for Your Purchase!!</h3>
+        <p id="modal-message">We have received your order. It will take about 2 business days for you to receive your order.</p>
+      </div>
+    </div>
 
-          <div> <!-- second column-->
-            <nav class="nav-main">
-              <ul class="ul-footer">
-              <li class="li-footer">Link 3</li>
-              <li class="li-footer">Link 4</li>
-              </ul>
-           </nav>
-          </div>
+  </div>
 
-          <div class="right">
-            <form>
-              <input type="text" value="suscribe">
-            </form>
-          </div>
-      </div> <!-- row-->
-          <p class="middle footer-text">@2017 Cshirt Design Company</p>
-    </footer>
-
-
-    <script type="text/javascript">
-      $('.minus-btn-summary-checkout').on('click', function(e) {
-    		e.preventDefault();
-    		var $this = $(this);
-    		var $input = $this.closest('div').find('input');
-    		var value = parseInt($input.val());
-
-    		if (value > 1) {
-    			value = value - 1;
-    		} else {
-    			value = 0;
-    		}
-
-        $input.val(value);
-
-    	});
-
-    	$('.plus-btn-summary-checkout').on('click', function(e) {
-    		e.preventDefault();
-    		var $this = $(this);
-    		var $input = $this.closest('div').find('input');
-    		var value = parseInt($input.val());
-
-    		if (value < 100) {
-      		value = value + 1;
-    		} else {
-    			value =100;
-    		}
-
-    		$input.val(value);
-    	});
-
-      $('.like-btn').on('click', function() {
-        $(this).toggleClass('is-active');
-      });
-    </script>
+  <script type="text/javascript" src="js/modal.js"></script>
   </body>
+
 </html>

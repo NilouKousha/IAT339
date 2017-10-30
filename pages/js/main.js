@@ -41,7 +41,23 @@
 
 
 
-var item = document.getElementById('modal-shopping-summery-modal');
-function removeElement(){
-  item.style.display = "none";
+var item1 = document.getElementById('modal-shopping-summery-modal1');
+var item2 = document.getElementById('modal-shopping-summery-modal2');
+var item3 = document.getElementById('modal-shopping-summery-modal3');
+var view = document.getElementById('view-shopping-bag');
+var subtotal= document.getElementById('subtotal');
+var result = document.getElementById('result');
+function removeElement1(){
+  item1.style.display = "none";
+  view.textContent = "View Shopping Bag(2)";
+  subtotal.textContent = "CAD $1200";
+}
+function removeElement2(){
+  item2.style.display = "none";
+  view.textContent = "View Shopping Bag(1)";
+  subtotal.textContent = "CAD $750";
+}
+function removeElement3(){
+  item3.style.display = "none";
+  result.style.display = "none";
 }

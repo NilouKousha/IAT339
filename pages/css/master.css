@@ -340,7 +340,7 @@ color: #96b59c;
 
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text],input[type=email],select,textarea {
+input[type=text],input[type=email],input[type=number],select,textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
@@ -360,6 +360,7 @@ input[type=submit] {
     border-radius: .2rem;
     cursor: pointer;
     height: 2.5rem;
+    width: 100%;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -535,7 +536,7 @@ input[type=submit]:hover {
   line-height: 2rem;
 }
 .pricing{
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -608,7 +609,7 @@ select:focus > option:checked{
   padding-top: 2rem;
 }
 
-#view-shopping-bag{
+#view-shopping-bag-span{
   position: absolute;
   left: 0;
 }
@@ -749,9 +750,62 @@ modal for detail product-image
 }
 
 
+.secure-checkout-containter{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+
+  position: relative;
+
+
+}
+.shipping-form{
+  margin-left: 2rem;
+}
+
+.shipping-title{
+  font-size: 2rem;
+}
+
+.payment-radio{
+  margin-left: 2rem;
+}
+.card-info{
+  margin-top: 6rem;
+}
+#card-number{
+  width: 50% !important;
+}
+#expiray{
+  width:15% !important;
+}
+.checkout-button{
+  padding-top: 8rem;
+  width: 100% !important;
+}
+
+#Secure-checkout{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: bolder;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f8f8f8;
+  font-size: 3rem;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 668px) {
-
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 
 }
 
@@ -852,6 +906,10 @@ modal for detail product-image
       height: 20%;
     }
 
+    .footprint{
+      width: 50%;
+      font-size: 0.7rem;
+    }
 
     .product-detail-description-box{
       width: 40%;
@@ -859,9 +917,24 @@ modal for detail product-image
     }
 
     .title-discription{
+      margin-top: 2rem;
       margin-bottom: 2rem;
       text-align: left;
     }
 
+    .shipping-form{
+      width: 40%;
+    }
+    .billing-payment{
+      width: 40%;
+    }
 
+    .billing-payment{
+      position: absolute;
+      right:2rem;
+    }
+    .shipping-form{
+      position: absolute;
+      left:2rem;
+    }
 }

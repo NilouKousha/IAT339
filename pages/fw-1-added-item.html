@@ -15,6 +15,9 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <h1 class="logo-title">Winter Wolf</h1>
+      </div>
       <div class="navigation-bar">
         <div class="topnav" id="myTopnav">
           <a href="javascript:void(0);" class="icon" onclick="showOrHide()">&#9776;</a>
@@ -24,7 +27,7 @@
           <a class="main-nav-item-page-index col-1of6 nav-item" href="./leather.html">Leather</a>
           <a class="main-nav-item-page-index col-1of6 nav-item" href="./campaign.html">Campaign</a>
         </div>
-        <a href="./shopping-bag-new.html" class="shopping-icon" onmousemove="openModelForShoppingCart()"><img src="./img/shopping-cart24.png" alt="shopping cart icon"></a>
+        <a href="./shopping-bag-new.html" class="shopping-icon" onmousemove="openModelForShoppingCart()"><img src="./img/shopping-cart24-three.png" alt="shopping cart icon"></a>
       </div>
     </header>
       <main class="container-home">
@@ -82,7 +85,7 @@
           <div class="model-shopping-context">
 
             <div id="modal-shopping-info-container">
-              <div id="modal-shopping-summery-modal" class="modal-shopping-summery">
+              <div id="modal-shopping-summery-modal1" class="modal-shopping-summery">
                 <div class="small-photo">
                   <img src="img/Shopping-1.jpg" alt="photo of a woman wearing pink shirt">
                 </div>
@@ -91,18 +94,51 @@
                   <div class="samll-discription-text">Size: Samll</div>
                   <div class="samll-discription-text">Price: CAD $870</div>
                   <div class="samll-discription-text">
-                      Quantity:1 <span>CAD $780</span>
+                      Quantity:1
                   </div>
                   <div class="samll-discription-text">
-                    <a id="remove" href="#" onclick="removeElement()">Remove</a>
+                    <a id="remove" href="#" onclick="removeElement1()">Remove</a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="modal-shopping-summery-modal2" class="modal-shopping-summery">
+                <div class="small-photo">
+                  <img src="img/Shopping-1.jpg" alt="photo of a woman wearing pink shirt">
+                </div>
+                <div class="samll-discription">
+                  <div class="samll-discription-text">Maison Margiela</div>
+                  <div class="samll-discription-text">Size: Samll</div>
+                  <div class="samll-discription-text">Price: CAD $870</div>
+                  <div class="samll-discription-text">
+                      Quantity:1
+                  </div>
+                  <div class="samll-discription-text">
+                    <a id="remove" href="#" onclick="removeElement2()">Remove</a>
+                  </div>
+                </div>
+              </div>
+              <div id="modal-shopping-summery-modal3" class="modal-shopping-summery">
+                <div class="small-photo">
+                  <img src="img/Shopping-1.jpg" alt="photo of a woman wearing pink shirt">
+                </div>
+                <div class="samll-discription">
+                  <div class="samll-discription-text">Maison Margiela</div>
+                  <div class="samll-discription-text">Size: Samll</div>
+                  <div class="samll-discription-text">Price: CAD $870</div>
+                  <div class="samll-discription-text">
+                      Quantity:1
+                  </div>
+                  <div class="samll-discription-text">
+                    <a id="remove" href="#" onclick="removeElement3()">Remove</a>
                   </div>
                 </div>
               </div>
               <hr>
-              <div class="modal-shopping-result">
+              <div id="result" class="modal-shopping-result">
                 <div class="line-summery">
-                  <span id="view-shopping-bag"><a href="#">View Shopping Bag(1)</a></span>
-                  <span id="subtotal">Subtotal: CAD $780</span>
+                  <span id="view-shopping-bag-span"><a id="view-shopping-bag" href="./shopping-bag-new.html">View Shopping Bag(3)</a></span>
+                  <span id="subtotal">Subtotal: CAD $2500</span>
                 </div>
                 <div id="Secure-Checkout">
                   <a id="Secure-Checkout-text" href="#">Secure Checkout</a>
