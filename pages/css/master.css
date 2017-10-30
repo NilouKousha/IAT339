@@ -228,6 +228,11 @@ body{
   opacity: 0.8;
 }
 
+.logo-title{
+  text-align: center;
+  font-size: 3vw;
+  color: #3e5f64;
+}
 .ss-big-title{
   position: absolute;
   margin-top: -3rem;
@@ -385,7 +390,7 @@ input[type=submit]:hover {
 }
 
 #submit-btn{
-  width: 100%;
+  width: 40%;
 }
 
 #bag{

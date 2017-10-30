@@ -54,12 +54,13 @@
 }
 
 .topnav{
-  position: absolute;
+  /*position: absolute;*/
   left: 2rem;
   top:1rem;
   overflow: hidden;
   text-align: center;
   width:90%;
+  display: inline-flex;
 }
 
 .topnavhome{
@@ -89,6 +90,17 @@
     color: #96b59c;
 }
 
+
+ /*navigation element*/
+
+ .links{
+   text-decoration: none;
+ }
+.links:hover, .links:focus, .links:active{
+  border-bottom:1px solid #ddd;
+  padding-bottom: 1.1rem;
+  color: #96b59c;
+}
 
 
 
